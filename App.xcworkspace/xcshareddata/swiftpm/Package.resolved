@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "f96b619bcb2383b43d898402283924b80e2c4bae",
+          "version": "5.4.3"
+        }
+      },
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
+        "state": {
+          "branch": "version6-xcode13",
+          "revision": "5ecd8df18f1750efaa57d1b9623090156da01ef3",
+          "version": null
+        }
+      },
+      {
+        "package": "ModelMapper",
+        "repositoryURL": "https://github.com/ShabanKamell/ModelMapper-Swift",
+        "state": {
+          "branch": null,
+          "revision": "bf52ccdc2075d50884a7af4804f00859accd58dd",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "SwiftMessages",
+        "repositoryURL": "https://github.com/SwiftKickMobile/SwiftMessages",
+        "state": {
+          "branch": null,
+          "revision": "1e49de7b3780b69927bc3e61903d8ec0693a3dc5",
+          "version": "9.0.5"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

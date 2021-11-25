@@ -1,0 +1,188 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# Types: "app-store", "validation", "ad-hoc", "package", "enterprise", "development", "developer-id", "mac-application"
+# latest_testflight_build_number
+# ENV["GYM_PROJECT"] = "App/App.xcodeproj"
+# ENV["GYM_WORKSPACE"] = "App/App.xcodeproj"
+
+update_fastlane
+default_platform(:ios)
+
+platform :ios do
+
+################################################################################
+# Firebase
+################################################################################
+
+  desc "Firebase distribute staging"
+  lane :firebase_distribute_staging do
+    distribute_firebase(
+        configuration: "Staging",
+        googleServicesInfoName: "GoogleService-Info-Staging",
+        incrementBuild: true)
+  end
+  desc "Firebase distribute debug"
+  lane :firebase_distribute_debug do
+    distribute_firebase(
+        configuration: "Debug",
+        googleServicesInfoName: "GoogleService-Info-Staging",
+        incrementBuild: true)
+  end
+
+  desc "Firebase distribute internal"
+  lane :firebase_distribute_internal do
+    distribute_firebase(
+        configuration: "Internal",
+        googleServicesInfoName: "GoogleService-Info-Staging",
+        incrementBuild: true)
+  end
+
+  desc "Firebase distribute release"
+  lane :firebase_distribute_release do
+    distribute_firebase(
+        configuration: "Release",
+        googleServicesInfoName: "GoogleService-Info",
+        incrementBuild: true)
+  end
+
+  desc "Firebase distribute staging"
+  lane :firebase_distribute_no_increment_staging do
+    distribute_firebase(
+        configuration: "Staging",
+        googleServicesInfoName: "GoogleService-Info-Staging",
+        incrementBuild: false)
+  end
+  desc "Firebase distribute debug"
+  lane :firebase_distribute_no_increment_debug do
+    distribute_firebase(
+        configuration: "Debug",
+        googleServicesInfoName: "GoogleService-Info-Staging",
+        incrementBuild: false)
+  end
+
+  desc "Firebase distribute internal"
+  lane :firebase_distribute_no_increment_internal do
+    distribute_firebase(
+        configuration: "Internal",
+        googleServicesInfoName: "GoogleService-Info-Staging",
+        incrementBuild: false)
+  end
+
+  desc "Firebase distribute release"
+  lane :firebase_distribute_no_increment_release do
+    distribute_firebase(
+        configuration: "Release",
+        googleServicesInfoName: "GoogleService-Info",
+        incrementBuild: false)
+  end
+
+################################################################################
+# TestFlight
+################################################################################
+
+    desc "TestFlight Staging"
+    lane :testflight_distribute_staging do
+        distribute_testflight(configuration: "Staging")
+     end
+
+    desc "TestFlight Internal"
+    lane :testflight_distribute_internal do
+        distribute_testflight(configuration: "Internal")
+     end
+
+    desc "TestFlight Release"
+    lane :testflight_distribute_release do
+        distribute_testflight(configuration: "Release")
+     end
+
+################################################################################
+# AppStore
+################################################################################
+
+    desc "AppStore release"
+    lane :appstore_distribute_release do
+        match_appstore_connect
+        # TODO: check this code functionality
+        # sync_code_signing(type: "appstore")
+        increment_build_number(build_number: app_store_build_number + 1)
+        build_application(configuration: "Release", method: "app-store")
+        upload_to_app_store
+        slack(message: "Successfully uploaded a new App Store build")
+   end
+
+################################################################################
+# Run tests
+################################################################################
+
+    desc "Run tests"
+    lane :run_all_tests do
+        run_tests(scheme: "#{ENV['SCHEME']}")
+    end
+
+################################################################################
+# Shared
+################################################################################
+
+    desc "match appstore connect"
+    lane :match_appstore_connect do
+        app_store_connect_api_key(
+            key_id: "TODO",
+            issuer_id: "TODO",
+            key_filepath: "./TODO",
+            duration: 1200, # optional (maximum 1200)
+            in_house: false, # optional but may be required if using match/sigh
+        )
+      end
+
+    def distribute_testflight(configuration: String)
+            match_appstore_connect
+            increment_build_number(build_number: latest_testflight_build_number + 1)
+            build_application(configuration: configuration, method: "app-store")
+            upload_to_testflight(skip_waiting_for_build_processing: true)
+    end
+
+    def distribute_firebase(
+           configuration: String,
+           googleServicesInfoName: String,
+           incrementBuild: Boolean)
+            match_appstore_connect
+
+            if incrementBuild
+                increment_build_number
+            end
+
+            build_application(configuration: configuration, method: "ad-hoc")
+
+            firebase_app_distribution(
+                app: "1:925481789930:ios:4dd556c1b96430352f2a93",
+                googleservice_info_plist_path: "./App/App/Resources/Google Service info/" + googleServicesInfoName + ".plist",
+                testers: "TODO",
+                release_notes: "",
+                debug: true
+          )
+    end
+
+    def build_application(configuration: String, method: String)
+            build_ios_app(
+                scheme: "#{ENV['SCHEME']}",
+                configuration: configuration,
+                export_options: {
+                method: method,
+                compileBitcode: false
+                },
+                include_bitcode: false
+            )
+    end
+
+end

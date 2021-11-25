@@ -1,0 +1,115 @@
+"OOPS! something went wrong" = "OOPS! something went wrong, please try again.";
+
+"Required" = "Required";
+
+"Invalid" = "Invalid";
+
+"can_not_be_less_than" = "Cannot be less than";
+
+"can_not_be_more_than" = "Cannot be more than";
+
+"cancel" = "Cancel";
+
+"must_be" = "Must be";
+
+"not_matching" = "Not matching";
+
+"Invalid e-mail Address" = "Invalid email address";
+
+"home" = "Home";
+
+"cash_in_out" = "Cash In/Out";
+
+"transactions" = "Transactions";
+
+"hold_orders" = "Hold Orders";
+
+"manage_products" = "Manage Products";
+
+"hints" = "Hints";
+
+"lock" = "Lock";
+
+"online" = "Online";
+
+"available" = "available";
+
+"sar" = "SAR";
+
+"product" = "Product";
+
+"order_no" = "Order No";
+
+"subtotal" = "Subtotal";
+
+"discount" = "Discount";
+
+"tax" = "Tax";
+
+"total" = "Total";
+
+"proceed" = "Proceed";
+
+"categories" = "Categories";
+
+"sign_in" = "Sign In";
+
+"register_now" = "Register Now";
+
+"keep_me_signed" = "Keep me signed in";
+
+"forgot_password" = "Forgot Password?";
+
+"email" = "Email";
+
+"password" = "Password";
+
+"confirm_password" = "Confirm Password";
+
+"choose_between_multiple_modules" = "Choose between multiple POS modules here:";
+
+"start_your_session" = "Start Your Session";
+
+"products_chosen_for_you" = "These products have been chosen for you";
+
+"first_name" = "First Name";
+
+"write_first_name" = "Write your first name";
+
+"last_name" = "Last Name";
+
+"write_last_name" = "Write your last name";
+
+"country" = "Country";
+
+"phone_no" = "Phone No";
+
+"write_phone_no" = "Write your phone number";
+
+"company_name" = "Company Name";
+
+"write_company_name" = "Write your company name";
+
+"error" = "Error";
+
+"dismiss" = "Dismiss";
+
+"invalid_pattern" = "Invalid patterns";
+
+"invalid_date" = "Invalid date";
+
+"halls" = "Halls";
+
+"take_photo" = "Take Photo";
+
+"photo_library" = "Photo Library";
+
+"saved_photos" = "Saved Photos";
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+///// CHAUFFEUR
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+"sign_up" = "Sign Up";

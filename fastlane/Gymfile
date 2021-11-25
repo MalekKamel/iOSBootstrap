@@ -1,0 +1,5 @@
+scheme(ENV['SCHEME'])
+output_directory("./fastlane/builds/#{ENV['SCHEME']}")
+include_bitcode(false)
+include_symbols(false)
+export_xcargs("-allowProvisioningUpdates")

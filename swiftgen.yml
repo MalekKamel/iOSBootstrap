@@ -1,0 +1,43 @@
+strings:
+  - inputs: ${PROJECT_NAME}/${PROJECT_NAME}/Resources/Localization/en.lproj
+    outputs:
+      templateName: structured-swift5
+      output: ${PROJECT_NAME}/${PROJECT_NAME}/Resources/Strings.swift
+      params:
+        enumName: Strings
+        publicAccess: true
+
+xcassets:
+  ##############################
+  #  Assets
+  ##############################
+  - inputs: ${PROJECT_NAME}/${PROJECT_NAME}/Resources/Assets.xcassets
+    outputs:
+      templateName: swift5
+      output: ${PROJECT_NAME}/${PROJECT_NAME}/Resources/Assets.swift
+      params:
+        enumName: Assets
+        publicAccess: true
+  ##############################
+  #  Colors
+  ##############################
+  - inputs: ${PROJECT_NAME}/${PROJECT_NAME}/Resources/Colors.xcassets
+    outputs:
+      templateName: swift5
+      output: ${PROJECT_NAME}/${PROJECT_NAME}/Resources/Colors.swift
+      params:
+        enumName: Colors
+        publicAccess: true
+
+  ##############################
+  #  Fonts
+  ##############################
+fonts:
+  inputs: ${PROJECT_NAME}/${PROJECT_NAME}/Resources/Fonts
+  outputs:
+    templateName: swift5
+    enumName: AppFont
+    output: ${PROJECT_NAME}/${PROJECT_NAME}/Resources/Fonts.swift
+
+## For more info, use `swiftgen config doc` to open the full documentation on GitHub.
+## https://github.com/SwiftGen/SwiftGen/tree/6.4.0/Documentation/
