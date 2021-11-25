@@ -11,5 +11,5 @@
 
 //#include "../Pods/Target Support Files/Pods-Data/Pods-Data.release.xcconfig"
 
-SWIFT_GEN_YML_ROOT = ${SRCROOT}/..
+MAIN_PROJECT_ROOT = ${SRCROOT}/..
 

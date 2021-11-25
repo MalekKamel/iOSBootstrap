@@ -9,7 +9,7 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-SWIFT_GEN_YML_ROOT = ${SRCROOT}/..
+MAIN_PROJECT_ROOT = ${SRCROOT}/..
 
 //#include "../Pods/Target Support Files/Pods-Presentation/Pods-Presentation.release.xcconfig"
 

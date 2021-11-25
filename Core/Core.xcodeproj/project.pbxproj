@@ -212,13 +212,6 @@
 			path = Misc;
 			sourceTree = "<group>";
 		};
-		0420781B236F5F080007CFDE /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		04207821236F5F080007CFDE /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,7 +248,6 @@
 				F2C7E24D26ECCB8300C5239B /* Supporting files */,
 				186836F32696503D00DDE71E /* Crashlytics */,
 				04207819236F5F080007CFDE /* Misc */,
-				0420781B236F5F080007CFDE /* Protocols */,
 				04207821236F5F080007CFDE /* Util */,
 				04207808236F5EC30007CFDE /* FeedbackGenerator */,
 				04207801236F5EC30007CFDE /* JSON */,

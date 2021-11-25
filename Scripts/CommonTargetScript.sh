@@ -3,4 +3,4 @@
 
 echo "Running CommonTargetScript"
 
-"${SWIFT_GEN_YML_ROOT}/etc/swiftgen/bin/swiftgen" config run --config $SWIFT_GEN_YML_ROOT/swiftgen.yml
+"${MAIN_PROJECT_ROOT}/etc/swiftgen/bin/swiftgen" config run --config $MAIN_PROJECT_ROOT/swiftgen.yml
