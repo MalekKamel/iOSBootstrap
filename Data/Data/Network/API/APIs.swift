@@ -10,14 +10,9 @@ open class SwaggerClientAPI {
     public static var basePath = AppEnvironment.shared.baseUrl
     public static var credential: URLCredential?
     public static var customHeaders: [String: String] {
-        ["api-key": apiKey,
-         "Authorization": "Bearer \(defaults.accessToken)"]
+        ["Authorization": "Bearer \(defaults.accessToken)"]
     }
     public static var requestBuilderFactory: RequestBuilderFactory = AlamofireRequestBuilderFactory()
-    // TODO: shouldn't be here
-    static var apiKey: String {
-        "gmZeKYE7q1sk5UPSAzCV"
-    }
 }
 
 open class RequestBuilder<T> {
