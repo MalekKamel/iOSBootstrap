@@ -11,14 +11,19 @@
 		046B8007236F3A1500AE23A4 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046B7FFD236F3A1500AE23A4 /* Data.framework */; };
 		046B800C236F3A1500AE23A4 /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B800B236F3A1500AE23A4 /* DataTests.swift */; };
 		046B800E236F3A1500AE23A4 /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 046B8000236F3A1500AE23A4 /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BCAC163F07ECDC239074FFB /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC8104C3C2FB0D64FCA4E /* Favorites.swift */; };
 		1BCAC16DD9B4553D480D4507 /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC1A885DAFAFFE8C83E64 /* CodableHelper.swift */; };
+		1BCAC22A93827B47B631E521 /* Fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC98B53EADA2169A5EC27 /* Fake.swift */; };
 		1BCAC2809F7F2B64EC03DA52 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACF719D3353044795053A /* Configuration.swift */; };
 		1BCAC2C40E53A0B896BC83E7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC9FB5935C5F0D50EA1CD /* Extensions.swift */; };
 		1BCAC2F3EBEEE9E950EA42EE /* Error+ApiErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC0245077969AE70DBCE1 /* Error+ApiErrorMessage.swift */; };
+		1BCAC42A6244406AEF744570 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC27397DD00820EB0FB4A /* Cart.swift */; };
+		1BCAC529751E4F3DB9747DCA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACC2B123D695C7A3F9C4B /* Product.swift */; };
 		1BCAC6E4B890E1823A3304E2 /* JSONValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC5544138A94735AC9DFC /* JSONValue.swift */; };
 		1BCAC6F1920B278474354D74 /* BasicApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC8925C10FC3DA555F557 /* BasicApiResponse.swift */; };
 		1BCAC7BD440B3CD9F5491E4C /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACA9052796B06CEBB33E3 /* APIHelper.swift */; };
 		1BCAC7F5339253030F42C7D2 /* BundleToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACBDC8A956463649898D7 /* BundleToken.swift */; };
+		1BCAC835DA006D4EEA632DDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCAC3D21388926DD945EB3B /* LaunchScreen.storyboard */; };
 		1BCAC8FC62E6BF2DAC2CFAC6 /* Error+AlamofireError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC451E1F616B576EE34BE /* Error+AlamofireError.swift */; };
 		1BCAC9696D1C727467FB68F3 /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC395AC0E0747FE99FC2D /* JSONEncodingHelper.swift */; };
 		1BCAC9B552A5E3B15A474B67 /* AppResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC749826273961B6E7017 /* AppResponse.swift */; };
@@ -67,17 +72,22 @@
 		1BCAC0FDEE5EE9EDEB35A767 /* Error+UnderlyingErrorDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+UnderlyingErrorDescription.swift"; sourceTree = "<group>"; };
 		1BCAC1A885DAFAFFE8C83E64 /* CodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableHelper.swift; sourceTree = "<group>"; };
 		1BCAC202FCFC3ACC61FCEC75 /* Error+ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+ApiError.swift"; sourceTree = "<group>"; };
+		1BCAC27397DD00820EB0FB4A /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		1BCAC395AC0E0747FE99FC2D /* JSONEncodingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodingHelper.swift; sourceTree = "<group>"; };
+		1BCAC3D21388926DD945EB3B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BCAC451E1F616B576EE34BE /* Error+AlamofireError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+AlamofireError.swift"; sourceTree = "<group>"; };
 		1BCAC5544138A94735AC9DFC /* JSONValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONValue.swift; sourceTree = "<group>"; };
 		1BCAC5BA3C6296448ADCF3D3 /* AppPublishers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPublishers.swift; sourceTree = "<group>"; };
 		1BCAC6C06CBB7B15C9CCB623 /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
 		1BCAC749826273961B6E7017 /* AppResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppResponse.swift; sourceTree = "<group>"; };
+		1BCAC8104C3C2FB0D64FCA4E /* Favorites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		1BCAC8925C10FC3DA555F557 /* BasicApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicApiResponse.swift; sourceTree = "<group>"; };
+		1BCAC98B53EADA2169A5EC27 /* Fake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fake.swift; sourceTree = "<group>"; };
 		1BCAC9FB5935C5F0D50EA1CD /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1BCACA43F646DAD14E8A60B0 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		1BCACA9052796B06CEBB33E3 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		1BCACBDC8A956463649898D7 /* BundleToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleToken.swift; sourceTree = "<group>"; };
+		1BCACC2B123D695C7A3F9C4B /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		1BCACDBBEBB30FB00E930AC3 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		1BCACF719D3353044795053A /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		1BCACFA639B2F7BAD0038668 /* AlamofireImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireImplementations.swift; sourceTree = "<group>"; };
@@ -131,6 +141,11 @@
 			isa = PBXGroup;
 			children = (
 				1BCACE6A5A685F158806A1D7 /* Network */,
+				1BCACC2B123D695C7A3F9C4B /* Product.swift */,
+				1BCAC8104C3C2FB0D64FCA4E /* Favorites.swift */,
+				1BCAC27397DD00820EB0FB4A /* Cart.swift */,
+				1BCAC3D21388926DD945EB3B /* LaunchScreen.storyboard */,
+				1BCAC98B53EADA2169A5EC27 /* Fake.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -416,6 +431,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BCAC835DA006D4EEA632DDB /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +477,10 @@
 				1BCAC9B552A5E3B15A474B67 /* AppResponse.swift in Sources */,
 				1BCACBBD63A8BA51CDEFC635 /* AppError.swift in Sources */,
 				1BCAC6F1920B278474354D74 /* BasicApiResponse.swift in Sources */,
+				1BCAC529751E4F3DB9747DCA /* Product.swift in Sources */,
+				1BCAC163F07ECDC239074FFB /* Favorites.swift in Sources */,
+				1BCAC42A6244406AEF744570 /* Cart.swift in Sources */,
+				1BCAC22A93827B47B631E521 /* Fake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

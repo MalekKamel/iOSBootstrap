@@ -13,12 +13,9 @@ public protocol AppScreen: View, Reportable {
     associatedtype NavigationLinksView: View
     associatedtype LoadingViewType: View
     associatedtype ViewModel: AppViewModel
-    associatedtype ScreenRoute: AppRoute
 
     /// The viewModel of this screen
     var vm: ViewModel { get set }
-
-    var route: ScreenRoute? { get set }
 
     var hasNavbar: Bool { get }
 

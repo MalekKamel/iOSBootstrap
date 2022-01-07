@@ -30,7 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     private func setupRootWindow(windowScene: UIWindowScene) {
         let window = UIWindow(windowScene: windowScene)
-        let rootVC = AppHostingController(rootView: SplashScreen.build())
+        let rootVC = UIHostingController(rootView: App())
         window.rootViewController = rootVC
         UINavigationBar.appearance().isHidden = true
         window.makeKeyAndVisible()
