@@ -23,6 +23,7 @@
 		1BCAC004B941D0AEE2ED29A1 /* String+DropWhitSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACC78030FDDC1946F7D9D /* String+DropWhitSpaces.swift */; };
 		1BCAC122E27F549630C9673D /* ColorAsset+SwiftUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC8DB095242B656E20CDF /* ColorAsset+SwiftUIColor.swift */; };
 		1BCAC13C0AFBB950DFFC54BF /* CoreBundleToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACFE842E5A5932FB08947 /* CoreBundleToken.swift */; };
+		1BCAC1DC45838FE7D1D09A12 /* AppHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC81243AB319445D8F60B /* AppHostingController.swift */; };
 		1BCAC4E1D5B3FD90C677FAB7 /* FontFamily+SwiftUIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC6B2507C410649CA92EA /* FontFamily+SwiftUIFont.swift */; };
 		1BCAC4E6ED24771431AE71B5 /* Decodable+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC65E0A0ED7BA63BBB11C /* Decodable+Any.swift */; };
 		1BCAC8EA4F30DCE8E8FC4AF1 /* ImageAsset+SwiftUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACC81716D0ECD28761A1E /* ImageAsset+SwiftUIImage.swift */; };
@@ -30,6 +31,7 @@
 		1BCAC970BB0B9E3A2E5461D7 /* Encodable+AsDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC9D104A6D58319CC67B7 /* Encodable+AsDictionary.swift */; };
 		1BCACA24EF5E8F34B7D7C400 /* BuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC2F2BA8C0CD5F1A62FC2 /* BuildConfig.swift */; };
 		1BCACD3B764C1783C3C11BF0 /* AppPList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACC88CAAF11CD94A83B96 /* AppPList.swift */; };
+		1BCACD7BBB8AD2F11065DF25 /* CoreSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACAFFEC054543253808A7 /* CoreSceneDelegate.swift */; };
 		1BCACDED6CCEBDB36E7BF0E5 /* String+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACCA988BE4FBFAF9BCF55 /* String+Range.swift */; };
 		58B83330A5B4A6A21A8F22FF /* Int+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B837A79A2162C1064B0192 /* Int+String.swift */; };
 		58B83C7891B05DBB03A265C6 /* Double+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83966D92117BF2B115CD5 /* Double+String.swift */; };
@@ -105,8 +107,10 @@
 		1BCAC2F2BA8C0CD5F1A62FC2 /* BuildConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildConfig.swift; path = Core/Util/BuildConfig.swift; sourceTree = SOURCE_ROOT; };
 		1BCAC65E0A0ED7BA63BBB11C /* Decodable+Any.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decodable+Any.swift"; sourceTree = "<group>"; };
 		1BCAC6B2507C410649CA92EA /* FontFamily+SwiftUIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FontFamily+SwiftUIFont.swift"; sourceTree = "<group>"; };
+		1BCAC81243AB319445D8F60B /* AppHostingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHostingController.swift; sourceTree = "<group>"; };
 		1BCAC8DB095242B656E20CDF /* ColorAsset+SwiftUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ColorAsset+SwiftUIColor.swift"; sourceTree = "<group>"; };
 		1BCAC9D104A6D58319CC67B7 /* Encodable+AsDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+AsDictionary.swift"; sourceTree = "<group>"; };
+		1BCACAFFEC054543253808A7 /* CoreSceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreSceneDelegate.swift; sourceTree = "<group>"; };
 		1BCACC78030FDDC1946F7D9D /* String+DropWhitSpaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+DropWhitSpaces.swift"; sourceTree = "<group>"; };
 		1BCACC81716D0ECD28761A1E /* ImageAsset+SwiftUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageAsset+SwiftUIImage.swift"; sourceTree = "<group>"; };
 		1BCACC88CAAF11CD94A83B96 /* AppPList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPList.swift; sourceTree = "<group>"; };
@@ -264,6 +268,7 @@
 				1BCAC91A248CBA5BB3A52C70 /* PList */,
 				1BCAC42B96AC7F15AF2D8A29 /* SwiftUI */,
 				1BCACFE842E5A5932FB08947 /* CoreBundleToken.swift */,
+				1BCACAFFEC054543253808A7 /* CoreSceneDelegate.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				1BCACF5F05AD3133D9BD4AF7 /* SwiftGen */,
+				1BCAC81243AB319445D8F60B /* AppHostingController.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -608,6 +614,8 @@
 				1BCAC122E27F549630C9673D /* ColorAsset+SwiftUIColor.swift in Sources */,
 				1BCAC8EA4F30DCE8E8FC4AF1 /* ImageAsset+SwiftUIImage.swift in Sources */,
 				1BCAC4E1D5B3FD90C677FAB7 /* FontFamily+SwiftUIFont.swift in Sources */,
+				1BCACD7BBB8AD2F11065DF25 /* CoreSceneDelegate.swift in Sources */,
+				1BCAC1DC45838FE7D1D09A12 /* AppHostingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

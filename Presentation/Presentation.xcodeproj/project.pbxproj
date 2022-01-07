@@ -24,7 +24,6 @@
 		1BCACAB356D4A877558493FE /* AppStateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC94DE93C29CF57D3366D /* AppStateObject.swift */; };
 		1BCACCB1AEA376E378AA18DB /* AppLazyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC42C0BC92AA710217FB2 /* AppLazyImage.swift */; };
 		1BCACD4FCD485E8D6ABDA4D5 /* View+OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACB9DDDB48023AD63C56D /* View+OnChange.swift */; };
-		1BCACD5A28739F341A0D4603 /* AppHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC5A69025B3B1BCCAEFF7 /* AppHostingController.swift */; };
 		1BCACE0FA3F865F866BC6C3A /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC3BD5006EE4615552878 /* LazyView.swift */; };
 		58B8311028C012625A5EE8F9 /* NSErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83A98059F831BB666E067 /* NSErrorHandler.swift */; };
 		58B83114D1D35AA4D55EA4CD /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B836B9C550F8E169046FBF /* IconButton.swift */; };
@@ -154,7 +153,6 @@
 		1BCAC0B12C93688FB78362E4 /* PresentationBundleToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationBundleToken.swift; sourceTree = "<group>"; };
 		1BCAC3BD5006EE4615552878 /* LazyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		1BCAC42C0BC92AA710217FB2 /* AppLazyImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLazyImage.swift; sourceTree = "<group>"; };
-		1BCAC5A69025B3B1BCCAEFF7 /* AppHostingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHostingController.swift; sourceTree = "<group>"; };
 		1BCAC83A7072B60F5AD41475 /* View+CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+CornerRadius.swift"; sourceTree = "<group>"; };
 		1BCAC849FF613E10BB0DA152 /* AppBottomSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBottomSheet.swift; sourceTree = "<group>"; };
 		1BCAC8C3548C0E863A930723 /* CountDownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownTimer.swift; sourceTree = "<group>"; };
@@ -476,7 +474,6 @@
 				58B8325A761B17249BC88D44 /* ViewControllerHolder */,
 				58B836A6B390FF786348BD26 /* ImagePickerButton */,
 				58B83D4CC524FEAA3FF7DB1A /* SelectionView */,
-				1BCAC5A69025B3B1BCCAEFF7 /* AppHostingController.swift */,
 				1BCAC10E5B9BBE87B302598B /* TextField */,
 				1BCAC94DE93C29CF57D3366D /* AppStateObject.swift */,
 				1BCAC2D7FF786D8B627A8B35 /* LazyView */,
@@ -981,7 +978,6 @@
 				C615D2B3273030E7002415A8 /* BorderLabel.swift in Sources */,
 				58B83F4E2B0DDD29DC0D795E /* SelectionView.swift in Sources */,
 				FC53879E2704E47C0061405F /* MyCapsule.swift in Sources */,
-				1BCACD5A28739F341A0D4603 /* AppHostingController.swift in Sources */,
 				1BCAC53D7C11255509E441C0 /* AppTextField.swift in Sources */,
 				1BCAC1FC711B3234E99B0D0E /* View+CornerRadius.swift in Sources */,
 				1BCAC676F1731017A4BC56A1 /* CountDownTimer.swift in Sources */,
