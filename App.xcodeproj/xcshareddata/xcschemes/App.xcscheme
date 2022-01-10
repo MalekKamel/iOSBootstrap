@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "046B7F74236F365B00AE23A4"
-               BuildableName = "Contacts.app"
+               BuildableName = "BootStrap.app"
                BlueprintName = "App"
                ReferencedContainer = "container:App.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "046B7F74236F365B00AE23A4"
-            BuildableName = "Contacts.app"
+            BuildableName = "BootStrap.app"
             BlueprintName = "App"
             ReferencedContainer = "container:App.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "046B7F74236F365B00AE23A4"
-            BuildableName = "Contacts.app"
+            BuildableName = "BootStrap.app"
             BlueprintName = "App"
             ReferencedContainer = "container:App.xcodeproj">
          </BuildableReference>
