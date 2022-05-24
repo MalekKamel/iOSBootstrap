@@ -1,4 +1,4 @@
-# Starter-iOS
+# iOSBootstrap
 
 Don't start from scratch, start from Here! 
 
