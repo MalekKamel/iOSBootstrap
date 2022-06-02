@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0420782C236F5F080007CFDE /* AppDelegate+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04207822236F5F080007CFDE /* AppDelegate+Util.swift */; };
-		0420782D236F5F080007CFDE /* Crashlytics+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04207823236F5F080007CFDE /* Crashlytics+Util.swift */; };
 		046B7FBF236F368D00AE23A4 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046B7FB5236F368D00AE23A4 /* Core.framework */; };
 		046B7FC4236F368D00AE23A4 /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B7FC3236F368D00AE23A4 /* CoreTests.swift */; };
 		046B7FC6236F368D00AE23A4 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 046B7FB8236F368D00AE23A4 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,7 +31,6 @@
 		F2772F6F26FDABB40047D753 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2772F6A26FDABB40047D753 /* Roboto-Bold.ttf */; };
 		F2772F7126FDAC3E0047D753 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2772F7026FDAC3E0047D753 /* Fonts.swift */; };
 		F27C3D4926DFD48F00B44D27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F27C3D4726DFD48F00B44D27 /* Localizable.strings */; };
-		F2F6C73E274ED42D0066D794 /* ExportFrameworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6C73D274ED42D0066D794 /* ExportFrameworks.swift */; };
 		F2F6C74E274EDE360066D794 /* Libs in Frameworks */ = {isa = PBXBuildFile; productRef = F2F6C74D274EDE360066D794 /* Libs */; };
 		FC42509426E0FE8000911471 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42509126E0FE8000911471 /* Assets.swift */; };
 		FC42509526E0FE8000911471 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42509226E0FE8000911471 /* Strings.swift */; };
@@ -66,8 +63,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		04207822236F5F080007CFDE /* AppDelegate+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Util.swift"; sourceTree = "<group>"; };
-		04207823236F5F080007CFDE /* Crashlytics+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Crashlytics+Util.swift"; sourceTree = "<group>"; };
 		046B7FB5236F368D00AE23A4 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		046B7FB8236F368D00AE23A4 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		046B7FB9236F368D00AE23A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,7 +97,6 @@
 		F2C7E25126ECCB8300C5239B /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		F2C7E25226ECCB8300C5239B /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		F2C7E25326ECCB8300C5239B /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
-		F2F6C73D274ED42D0066D794 /* ExportFrameworks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportFrameworks.swift; sourceTree = "<group>"; };
 		F2F6C74C274ED88E0066D794 /* Libs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Libs; path = ../Libs; sourceTree = "<group>"; };
 		FC42509126E0FE8000911471 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		FC42509226E0FE8000911471 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
@@ -139,15 +133,6 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		04207821236F5F080007CFDE /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				04207822236F5F080007CFDE /* AppDelegate+Util.swift */,
-				04207823236F5F080007CFDE /* Crashlytics+Util.swift */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
 		046B7FAB236F368D00AE23A4 = {
 			isa = PBXGroup;
 			children = (
@@ -171,10 +156,8 @@
 		046B7FB7236F368D00AE23A4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				F2F6C73D274ED42D0066D794 /* ExportFrameworks.swift */,
 				F2C7E24D26ECCB8300C5239B /* Supporting files */,
 				186836F32696503D00DDE71E /* Crashlytics */,
-				04207821236F5F080007CFDE /* Util */,
 				046B7FB8236F368D00AE23A4 /* Core.h */,
 				046B7FB9236F368D00AE23A4 /* Info.plist */,
 				1A54F78EFF4AF0A73B932F39 /* CoreAppDelegate.swift */,
@@ -451,10 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0420782C236F5F080007CFDE /* AppDelegate+Util.swift in Sources */,
-				F2F6C73E274ED42D0066D794 /* ExportFrameworks.swift in Sources */,
 				FC42509426E0FE8000911471 /* Assets.swift in Sources */,
-				0420782D236F5F080007CFDE /* Crashlytics+Util.swift in Sources */,
 				1A54FB55CC6E380B16437617 /* CoreAppDelegate.swift in Sources */,
 				FC42509626E0FE8000911471 /* Colors.swift in Sources */,
 				6D6C787F68DBC9E9DB09E0CF /* BuildConfigName.swift in Sources */,
