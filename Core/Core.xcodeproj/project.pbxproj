@@ -83,7 +83,6 @@
 		6D6C7510BCEF655BBFE010BC /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		6D6C79CE2367935C81299447 /* BuildConfigName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildConfigName.swift; sourceTree = "<group>"; };
 		6D6C7A9815753C2ECF04B533 /* Error+Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+Log.swift"; sourceTree = "<group>"; };
-		6D6C7FE91C94D3CA40A9853C /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		F2772F6626FDABB40047D753 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		F2772F6726FDABB40047D753 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		F2772F6826FDABB40047D753 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
@@ -125,14 +124,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00EF5C7B23E80798003A484F /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				6D6C7FE91C94D3CA40A9853C /* Config.swift */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		046B7FAB236F368D00AE23A4 = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +131,6 @@
 				046B7FB7236F368D00AE23A4 /* Core */,
 				046B7FC2236F368D00AE23A4 /* CoreTests */,
 				046B7FB6236F368D00AE23A4 /* Products */,
-				00EF5C7B23E80798003A484F /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
