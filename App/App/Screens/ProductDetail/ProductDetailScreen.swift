@@ -65,7 +65,8 @@ struct ProductDetailScreen: AppScreen {
                                     Image(systemName: "chevron.backward").foregroundColor(.blue)
                                     Text("Back").foregroundColor(.blue)
                                 }
-                                }.buttonStyle(PlainButtonStyle())
+                            }
+                                    .buttonStyle(PlainButtonStyle())
                                     .eraseToAnyView
                         }
                 )
@@ -175,7 +176,9 @@ struct ProductDetailScreen: AppScreen {
     }
 
     private func navigateToCartScreen() {
-        navigator.push(CartScreen.build())
+        navigator.push {
+            CartScreen.build()
+        }
     }
 
     private func AddToCartButton() -> some View {

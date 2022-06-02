@@ -78,7 +78,9 @@ struct ProductsScreen: AppScreen {
                 // It's also possible to use Navigator object directly to navigate
                 if false {
                     ProductItemView(item: item).onTapGesture {
-                        navigator.navigate(ProductDetailScreen.build(item: item), type: selectedNavigationType)
+                        navigator.navigate(type: selectedNavigationType) {
+                            ProductDetailScreen.build(item: item)
+                        }
                     }.buttonStyle(PlainButtonStyle())
                 }
             }
@@ -90,12 +92,12 @@ struct ProductsScreen: AppScreen {
         case .push:
             return .push(addToBackStack: true)
         case .sheet:
-            return .sheet
+            return .sheet()
         case .fullSheet:
             if #available(iOS 14, *) {
                 return .fullSheet
             }
-            return .sheet
+            return .sheet()
         }
     }
 }

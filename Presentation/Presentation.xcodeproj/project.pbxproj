@@ -104,7 +104,6 @@
 		FC0D6EAE26F77A1800748B0E /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D6EAD26F77A1800748B0E /* CircularButton.swift */; };
 		FC13AC9126FB72BA003B8A42 /* FontFamily+SwiftUIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC13AC9026FB72BA003B8A42 /* FontFamily+SwiftUIFont.swift */; };
 		FC13AC9926FB740D003B8A42 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC13AC9826FB740D003B8A42 /* Fonts.swift */; };
-		FC3A2E5D26D66F3E00CE2711 /* VerificationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3A2E5C26D66F3E00CE2711 /* VerificationField.swift */; };
 		FC53879E2704E47C0061405F /* MyCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5387992704E47C0061405F /* MyCapsule.swift */; };
 		FC53879F2704E47C0061405F /* CountUpCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53879A2704E47C0061405F /* CountUpCounter.swift */; };
 		FC5387A02704E47C0061405F /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53879B2704E47C0061405F /* ProgressBar.swift */; };
@@ -249,7 +248,6 @@
 		FC13AC9626FB7342003B8A42 /* helvetica-neue-condensed-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helvetica-neue-condensed-black.ttf"; sourceTree = "<group>"; };
 		FC13AC9726FB7342003B8A42 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		FC13AC9826FB740D003B8A42 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		FC3A2E5C26D66F3E00CE2711 /* VerificationField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationField.swift; sourceTree = "<group>"; };
 		FC5387992704E47C0061405F /* MyCapsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCapsule.swift; sourceTree = "<group>"; };
 		FC53879A2704E47C0061405F /* CountUpCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountUpCounter.swift; sourceTree = "<group>"; };
 		FC53879B2704E47C0061405F /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
@@ -461,7 +459,6 @@
 				58B832363C2E9995323CF9E2 /* SectionHeader.swift */,
 				58B83DB8A0EC01F3EAF3BE0F /* CheckboxStyle.swift */,
 				58B83717F9706DEF0377428B /* AdaptiveStack.swift */,
-				FC3A2E5C26D66F3E00CE2711 /* VerificationField.swift */,
 				C64393CB27051C60002DCB29 /* TextEditorView.swift */,
 				C615D2B2273030E7002415A8 /* BorderLabel.swift */,
 				58B839C41325AD8DFFE57003 /* ActivityIndicator */,
@@ -956,7 +953,6 @@
 				58B8370562013832A7012CC5 /* ResumableHandler.swift in Sources */,
 				58B834649E77E0E16FC79194 /* UnauthorizedHandler.swift in Sources */,
 				58B838A1C73FCB171025F8C6 /* View+ApplyIf.swift in Sources */,
-				FC3A2E5D26D66F3E00CE2711 /* VerificationField.swift in Sources */,
 				58B832030EC9D5703D47E09C /* View+OnGlobalFrameChange.swift in Sources */,
 				FC03F4B026E4EE7A007B4E3F /* AppRoundedButton.swift in Sources */,
 				58B83D9C1DE377319D88CA54 /* CardView.swift in Sources */,
