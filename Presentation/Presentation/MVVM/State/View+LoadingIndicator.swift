@@ -8,19 +8,22 @@ public struct LoadingModifier: ViewModifier {
     @ObservedObject public var state: LoadingState
     public var loadingView: AnyView
 
-    public func body(content: Content) -> some View {
-        GeometryReader { geometry in
-            switch state.loading {
-            case .idle:
-                content.eraseToAnyView()
-            case .loading:
-                ZStack {
-                    content
-                    loadingView
-                }.eraseToAnyView()
-            }
+    private var loadingViewOpacity: CGFloat {
+        switch state.loading {
+        case .idle:
+            return .zero
+        case .loading:
+            return 1
         }
     }
+
+    public func body(content: Content) -> some View {
+        ZStack {
+            content
+            loadingView.opacity(loadingViewOpacity)
+        }.eraseToAnyView()
+    }
+
 }
 
 public extension View {
