@@ -5,19 +5,27 @@
 
 import SwiftUI
 
-struct Spinner: UIViewRepresentable {
-    let isAnimating: Bool
-    let style: UIActivityIndicatorView.Style
-    let color: UIColor
+public struct Spinner: UIViewRepresentable {
+    private let isAnimating: Bool
+    private let style: UIActivityIndicatorView.Style
+    private let color: UIColor
 
-    func makeUIView(context: UIViewRepresentableContext<Spinner>) -> UIActivityIndicatorView {
+    public init(isAnimating: Bool,
+                style: UIActivityIndicatorView.Style,
+                color: UIColor) {
+        self.isAnimating = isAnimating
+        self.style = style
+        self.color = color
+    }
+
+    public func makeUIView(context: UIViewRepresentableContext<Spinner>) -> UIActivityIndicatorView {
         let spinner = UIActivityIndicatorView(style: style)
         spinner.hidesWhenStopped = true
         spinner.color = color
         return spinner
     }
 
-    func updateUIView(_ uiView: UIActivityIndicatorView, context: UIViewRepresentableContext<Spinner>) {
+    public func updateUIView(_ uiView: UIActivityIndicatorView, context: UIViewRepresentableContext<Spinner>) {
         isAnimating ? uiView.startAnimating() : uiView.stopAnimating()
     }
 }
