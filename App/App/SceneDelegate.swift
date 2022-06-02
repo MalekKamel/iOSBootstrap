@@ -19,6 +19,10 @@ class SceneDelegate: CoreSceneDelegate, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
+        guard let windowScene = scene as? UIWindowScene else {
+            return
+        }
+        self.windowScene = windowScene
         setupRootWindow(rootView: App())
     }
 

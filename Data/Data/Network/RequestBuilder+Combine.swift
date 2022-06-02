@@ -8,20 +8,15 @@ import Combine
 public extension RequestBuilder {
     func request() -> AppPublisher<T> {
         let passSubject = PassthroughSubject<T, AppError>()
-        execute {  response, error in
+        execute { response, error in
             if let error = error {
                 print("API Error: \(error.localizedDescription)")
                 passSubject.send(completion: .failure(error.toAppError))
                 return
             }
 
-            do {
-                let result = response!.body!
-                passSubject.send(result)
-            } catch {
-                print(error)
-                passSubject.send(completion: .failure(error.toAppError))
-            }
+            let result = response!.body!
+            passSubject.send(result)
         }
         return passSubject.eraseToAnyPublisher()
     }

@@ -11,8 +11,7 @@ public func serializeToData(jsonObject: Any) -> Data? {
             return nil
         }
         return try JSONSerialization.data(withJSONObject: jsonObject)
-    } catch let err{
-//        genericError(error: err)
+    } catch _ {
         return nil
     }
 }

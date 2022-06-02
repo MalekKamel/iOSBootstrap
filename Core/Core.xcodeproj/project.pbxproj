@@ -10,7 +10,6 @@
 		0044336024426D29009B96EE /* AppFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C72322BF7E308EFCACC73 /* AppFileManager.swift */; };
 		04207810236F5EC30007CFDE /* JsonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04207802236F5EC30007CFDE /* JsonUtil.swift */; };
 		04207811236F5EC30007CFDE /* Codable+Decode+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04207803236F5EC30007CFDE /* Codable+Decode+Encode.swift */; };
-		04207812236F5EC30007CFDE /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04207805236F5EC30007CFDE /* KeyboardManager.swift */; };
 		04207814236F5EC30007CFDE /* SelectionFeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04207809236F5EC30007CFDE /* SelectionFeedbackGenerator.swift */; };
 		04207826236F5F080007CFDE /* ImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420781A236F5F080007CFDE /* ImageRenderer.swift */; };
 		0420782C236F5F080007CFDE /* AppDelegate+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04207822236F5F080007CFDE /* AppDelegate+Util.swift */; };
@@ -90,7 +89,6 @@
 /* Begin PBXFileReference section */
 		04207802236F5EC30007CFDE /* JsonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonUtil.swift; sourceTree = "<group>"; };
 		04207803236F5EC30007CFDE /* Codable+Decode+Encode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Codable+Decode+Encode.swift"; sourceTree = "<group>"; };
-		04207805236F5EC30007CFDE /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		04207809236F5EC30007CFDE /* SelectionFeedbackGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionFeedbackGenerator.swift; sourceTree = "<group>"; };
 		0420781A236F5F080007CFDE /* ImageRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRenderer.swift; sourceTree = "<group>"; };
 		04207822236F5F080007CFDE /* AppDelegate+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Util.swift"; sourceTree = "<group>"; };
@@ -192,14 +190,6 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
-		04207804236F5EC30007CFDE /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				04207805236F5EC30007CFDE /* KeyboardManager.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
 		04207808236F5EC30007CFDE /* FeedbackGenerator */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,7 +245,6 @@
 				04207821236F5F080007CFDE /* Util */,
 				04207808236F5EC30007CFDE /* FeedbackGenerator */,
 				04207801236F5EC30007CFDE /* JSON */,
-				04207804236F5EC30007CFDE /* Managers */,
 				046B7FB8236F368D00AE23A4 /* Core.h */,
 				046B7FB9236F368D00AE23A4 /* Info.plist */,
 				1A54F78EFF4AF0A73B932F39 /* CoreAppDelegate.swift */,
@@ -583,7 +572,6 @@
 				FC6C8DFA270C6B3A001F7A35 /* Decimal+String.swift in Sources */,
 				0044336024426D29009B96EE /* AppFileManager.swift in Sources */,
 				04207810236F5EC30007CFDE /* JsonUtil.swift in Sources */,
-				04207812236F5EC30007CFDE /* KeyboardManager.swift in Sources */,
 				1A54FB55CC6E380B16437617 /* CoreAppDelegate.swift in Sources */,
 				FC42509626E0FE8000911471 /* Colors.swift in Sources */,
 				6D6C787F68DBC9E9DB09E0CF /* BuildConfigName.swift in Sources */,

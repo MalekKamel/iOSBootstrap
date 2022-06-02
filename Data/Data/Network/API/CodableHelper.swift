@@ -62,7 +62,6 @@ open class CodableHelper {
         } catch {
             returnedError = error
         }
-        print(returnedError)
         return (returnedDecodable, returnedError)
     }
 

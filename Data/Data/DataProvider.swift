@@ -9,7 +9,7 @@ final class DataProvider: NSObject {
     }
 }
 
-protocol DataProviderDelegate: class {
+protocol DataProviderDelegate: AnyObject {
 
 }
 
