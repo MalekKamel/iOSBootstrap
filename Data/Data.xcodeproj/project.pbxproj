@@ -87,7 +87,6 @@
 		1826F21528491BEF00FF882D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		1826F21B28491C8C00FF882D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1826F21C28491C8C00FF882D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A54F2A0531B3F145799B467 /* PostsRemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsRemoteDataSource.swift; sourceTree = "<group>"; };
 		1BCAC0245077969AE70DBCE1 /* Error+ApiErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+ApiErrorMessage.swift"; sourceTree = "<group>"; };
 		1BCAC0D6D6004BAD3B76C632 /* JSONEncodableEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodableEncoding.swift; sourceTree = "<group>"; };
 		1BCAC0FDEE5EE9EDEB35A767 /* Error+UnderlyingErrorDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+UnderlyingErrorDescription.swift"; sourceTree = "<group>"; };
@@ -150,14 +149,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04045AAC23919896007B940E /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				1A54F2A0531B3F145799B467 /* PostsRemoteDataSource.swift */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		04207978236F9E920007CFDE /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +170,6 @@
 				046B800A236F3A1500AE23A4 /* DataTests */,
 				046B7FFE236F3A1500AE23A4 /* Products */,
 				8804FE47B50944C2F8653764 /* Frameworks */,
-				04045AAC23919896007B940E /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
