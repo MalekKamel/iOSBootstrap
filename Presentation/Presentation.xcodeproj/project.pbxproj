@@ -13,6 +13,8 @@
 		046B7FE3236F39E000AE23A4 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046B7FD9236F39E000AE23A4 /* Presentation.framework */; };
 		046B7FE8236F39E000AE23A4 /* PresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B7FE7236F39E000AE23A4 /* PresentationTests.swift */; };
 		046B7FEA236F39E000AE23A4 /* Presentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 046B7FDC236F39E000AE23A4 /* Presentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18505B43284919C100647ADB /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18505B42284919C100647ADB /* Strings.swift */; };
+		18505B46284919E000647ADB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18505B44284919E000647ADB /* Localizable.strings */; };
 		1BCACA2116998C09946D0AD0 /* PresentationBundleToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC0B12C93688FB78362E4 /* PresentationBundleToken.swift */; };
 		1BCACCB1AEA376E378AA18DB /* AppLazyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC42C0BC92AA710217FB2 /* AppLazyImage.swift */; };
 		58B8311028C012625A5EE8F9 /* NSErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83A98059F831BB666E067 /* NSErrorHandler.swift */; };
@@ -89,6 +91,9 @@
 		046B7FE7236F39E000AE23A4 /* PresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationTests.swift; sourceTree = "<group>"; };
 		046B7FE9236F39E000AE23A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180BE3E525D6B35D0047737E /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18505B42284919C100647ADB /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		18505B45284919E000647ADB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localization/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18505B47284919E900647ADB /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Localization/ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1BCAC0B12C93688FB78362E4 /* PresentationBundleToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationBundleToken.swift; sourceTree = "<group>"; };
 		1BCAC42C0BC92AA710217FB2 /* AppLazyImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLazyImage.swift; sourceTree = "<group>"; };
 		58B8306DF8E36CA063516B98 /* Reporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reporter.swift; path = Presentation/Reportable/Reporter.swift; sourceTree = SOURCE_ROOT; };
@@ -171,6 +176,8 @@
 		04207873236F63E70007CFDE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				18505B44284919E000647ADB /* Localizable.strings */,
+				18505B42284919C100647ADB /* Strings.swift */,
 				FC13AC9226FB730A003B8A42 /* Fonts */,
 				042078C7236F6A550007CFDE /* Assets.swift */,
 				FC13AC9826FB740D003B8A42 /* Fonts.swift */,
@@ -406,7 +413,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046B7FED236F39E000AE23A4 /* Build configuration list for PBXNativeTarget "Presentation" */;
 			buildPhases = (
-				042078C6236F68520007CFDE /* Common scripts */,
+				042078C6236F68520007CFDE /* Common Scripts */,
 				046B7FD4236F39E000AE23A4 /* Headers */,
 				046B7FD5236F39E000AE23A4 /* Sources */,
 				046B7FD6236F39E000AE23A4 /* Frameworks */,
@@ -487,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				042078AF236F63E80007CFDE /* Colors.xcassets in Resources */,
+				18505B46284919E000647ADB /* Localizable.strings in Resources */,
 				042078B1236F63E80007CFDE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,7 +509,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		042078C6236F68520007CFDE /* Common scripts */ = {
+		042078C6236F68520007CFDE /* Common Scripts */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -510,7 +518,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Common scripts";
+			name = "Common Scripts";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -544,6 +552,7 @@
 				58B8311028C012625A5EE8F9 /* NSErrorHandler.swift in Sources */,
 				58B831BFD9DDDD9C1BF3EABC /* Presentable.swift in Sources */,
 				58B83D9B9272D01FDF829CA4 /* ErrorProcessor.swift in Sources */,
+				18505B43284919C100647ADB /* Strings.swift in Sources */,
 				58B838A5BF45306FB03B4C58 /* RequestOptions.swift in Sources */,
 				58B835CC5FD9043FDE4A3D00 /* CombineRequester.swift in Sources */,
 				58B83970BEC6E3148820ABCE /* PluggableErrorProcessor.swift in Sources */,
@@ -577,6 +586,18 @@
 			targetProxy = 046B7FE4236F39E000AE23A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18505B44284919E000647ADB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18505B45284919E000647ADB /* en */,
+				18505B47284919E900647ADB /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		046B7FEB236F39E000AE23A4 /* Debug */ = {

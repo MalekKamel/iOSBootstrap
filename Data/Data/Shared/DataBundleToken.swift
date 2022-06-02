@@ -5,8 +5,8 @@
 
 import Foundation
 
-class BundleToken {
+class DataBundleToken {
     static var bundle: Bundle {
-        Bundle(for: BundleToken.self)
+        Bundle(for: DataBundleToken.self)
     }
 }

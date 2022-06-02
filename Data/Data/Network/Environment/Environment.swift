@@ -11,5 +11,5 @@ class AppEnvironment {
     private init() {
     }
 
-    lazy var baseUrl: String = AppPList.value(of: .baseUrl, bundle: BundleToken.bundle)
+    lazy var baseUrl: String = AppPList.value(of: .baseUrl, bundle: DataBundleToken.bundle)
 }
