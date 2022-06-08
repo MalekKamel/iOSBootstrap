@@ -71,13 +71,6 @@ platform :ios do
         incrementBuild: false)
   end
 
-  desc "Firebase distribute internal"
-  lane :firebase_distribute_no_increment_internal do
-    distribute_firebase(
-        configuration: "Internal",
-        googleServicesInfoName: "GoogleService-Info-Staging",
-        incrementBuild: false)
-  end
 
   desc "Firebase distribute release"
   lane :firebase_distribute_no_increment_release do

@@ -177,7 +177,6 @@
 		F2D4442926D8E65F00883E3F /* CarSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CarSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F6C747274ED79B0066D794 /* Libs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Libs; sourceTree = "<group>"; };
 		F2F920FF26E250D1004F1601 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
-		FC7D738126DB86C900BE4A2D /* Chauffeur.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Chauffeur.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,7 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				F2F920FF26E250D1004F1601 /* AuthenticationServices.framework */,
-				FC7D738126DB86C900BE4A2D /* Chauffeur.framework */,
 				F2D4442926D8E65F00883E3F /* CarSharing.framework */,
 				F2A9DC5626CD269A0089EDDA /* CarSharing.framework */,
 				186FB5F825FBD54400A11AE5 /* SwiftUI.framework */,

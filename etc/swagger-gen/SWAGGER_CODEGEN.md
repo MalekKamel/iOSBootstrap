@@ -9,7 +9,7 @@ brew install swagger-codegen
 Run the following commands in a terminal:
 
 cd {PROJECT DIRECTORY HERE}/etc/swagger-codegen
-swagger-codegen generate -c config.json  -i  api-json.json -o ../../Data/Data/ChauffeurSwagger -l swift5 --type-mappings object=JSONValue
+swagger-codegen generate -c config.json  -i  api-json.json -o ../../Data/Data/Swagger -l swift5 --type-mappings object=JSONValue
 
 
 # Docs
