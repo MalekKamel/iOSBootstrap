@@ -176,7 +176,7 @@ extension CartScreen {
     static func build() -> some View {
         let vm = CartVM(
                 dataManager: DataManager.build(),
-                requester: CombineRequester()
+                requester: AsyncMan()
         )
         return CartScreen(vm: vm)
     }

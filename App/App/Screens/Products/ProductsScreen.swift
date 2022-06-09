@@ -135,7 +135,7 @@ extension ProductsScreen {
     static func build(items: [Product]) -> some View {
         let vm = ProductsVM(
                 dataManager: DataManager.build(),
-                requester: CombineRequester()
+                requester: AsyncMan()
         )
         return ProductsScreen(vm: vm, items: items)
     }

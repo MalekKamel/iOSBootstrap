@@ -40,7 +40,7 @@ extension HomeScreen {
     static func build() -> some View {
         let vm = HomeVM(
                 dataManager: DataManager.build(),
-                requester: CombineRequester()
+                requester: AsyncMan()
         )
         return HomeScreen(vm: vm)
     }

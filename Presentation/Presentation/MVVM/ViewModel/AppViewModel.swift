@@ -8,12 +8,15 @@ import Core
 import Combine
 
 public protocol AppViewModel: ObservableObject, Presentable {
-    var requester: CombineRequester { get }
+    var requester: AsyncMan { get }
     var loadState: LoadingState { get set }
     var bag: CancelableBag { get set }
     var dataManager: DataManagerContract { get set }
 
-    func request<T>(_ api: @escaping @autoclosure () -> AnyPublisher<T, AppError>, options: RequestOptions) -> AnyPublisher<T, Never>
+    func request(
+            options: RequestOptions,
+            _ operation: @escaping AsyncRequest
+    )
 }
 
 // MARK:- Presentable implementation
@@ -38,14 +41,14 @@ public extension AppViewModel {
 
 public extension AppViewModel {
 
-    func request<T>(_ api: @escaping @autoclosure () -> AnyPublisher<T, AppError>,
-                    options: RequestOptions = RequestOptions.defaultOptions()
-    ) -> AnyPublisher<T, Never> {
+    func request(
+            options: RequestOptions = RequestOptions.defaultOptions(),
+            _ operation: @escaping AsyncRequest
+    ) {
         requester
-                .request(api(), options: options, presentable: self)
-                .subscribe(on: DispatchQueue.global())
-                .receive(on: RunLoop.main)
-                .eraseToAnyPublisher()
+                .request(operation,
+                        options: options,
+                        presentable: self)
     }
 
 }

@@ -47,7 +47,7 @@ extension SettingsScreen {
     static func build() -> some View {
         let vm = SettingsVM(
                 dataManager: DataManager.build(),
-                requester: CombineRequester()
+                requester: AsyncMan()
         )
         return SettingsScreen(vm: vm)
     }

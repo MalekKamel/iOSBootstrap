@@ -9,10 +9,19 @@ class HomeVM: AppViewModel {
     public var dataManager: DataManagerContract
     @Published public var loadState: LoadingState = .init()
     public var bag = CancelableBag()
-    public var requester: CombineRequester
+    public var requester: AsyncMan
 
-    public init(dataManager: DataManagerContract, requester: CombineRequester) {
+    public init(dataManager: DataManagerContract, requester: AsyncMan) {
         self.dataManager = dataManager
         self.requester = requester
+        loadCart()
+    }
+
+    /// This is an example for triggering a network call
+    func loadCart() {
+        request {
+            let response = try await self.dataManager.cartRepo.loadCart()
+            print(response.first ?? "")
+        }
     }
 }

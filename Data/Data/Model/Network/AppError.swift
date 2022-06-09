@@ -34,7 +34,7 @@ extension AppError: LocalizedError {
         case .internet:
             return "😹 No Connection To Internet"
         case .connection:
-            return "🗣 connection"
+            return "No internet connection!"
         case .timeout:
             return "😹 timedout"
         case .authentication:

@@ -9,9 +9,9 @@ class ProductDetailVM: AppViewModel {
     public var dataManager: DataManagerContract
     @Published public var loadState: LoadingState = .init()
     public var bag = CancelableBag()
-    public var requester: CombineRequester
+    public var requester: AsyncMan
 
-    public init(dataManager: DataManagerContract, requester: CombineRequester) {
+    public init(dataManager: DataManagerContract, requester: AsyncMan) {
         self.dataManager = dataManager
         self.requester = requester
     }

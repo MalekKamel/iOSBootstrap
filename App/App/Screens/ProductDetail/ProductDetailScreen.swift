@@ -244,7 +244,7 @@ extension ProductDetailScreen {
     static func build(item: Product) -> some View {
         let vm = ProductDetailVM(
                 dataManager: DataManager.build(),
-                requester: CombineRequester()
+                requester: AsyncMan()
         )
         return ProductDetailScreen(vm: vm, item: item)
     }
