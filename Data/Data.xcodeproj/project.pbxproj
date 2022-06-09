@@ -49,6 +49,7 @@
 		58B832697F7A30B43BF2BC47 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B837756F719E7580F599B1 /* AppDefaults.swift */; };
 		58B832AD8D51A05027A75942 /* NetworkActivityLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83BB88083576FD1BFB8E4 /* NetworkActivityLogger.swift */; };
 		58B834B4F096A5958C786DBA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8325B030DFD7CF6A3564A /* Environment.swift */; };
+		58B8380FE8B2D79E04CF50E8 /* RequestBuilder+AsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83E1CAE76D2D81C7F4299 /* RequestBuilder+AsyncAwait.swift */; };
 		58B83BA7A8D8007C26EE112A /* RequestBuilder+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83094F09345651D4B9EB3 /* RequestBuilder+Combine.swift */; };
 		58B83E4D19D0EAD5F525428E /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B831B990F5E3DAC931895A /* HTTPStatusCode.swift */; };
 		6D6C7B6432FB9152D7430338 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C7625B9BE9768A15DCF82 /* DataManager.swift */; };
@@ -117,6 +118,7 @@
 		58B833A045B28FCAB1AF6384 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		58B837756F719E7580F599B1 /* AppDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
 		58B83BB88083576FD1BFB8E4 /* NetworkActivityLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkActivityLogger.swift; sourceTree = "<group>"; };
+		58B83E1CAE76D2D81C7F4299 /* RequestBuilder+AsyncAwait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RequestBuilder+AsyncAwait.swift"; sourceTree = "<group>"; };
 		6D6C7625B9BE9768A15DCF82 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		F2C7E25626ECCC5800C5239B /* Internal.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Internal.xcconfig; sourceTree = "<group>"; };
 		F2C7E25726ECCC5800C5239B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 				58B83094F09345651D4B9EB3 /* RequestBuilder+Combine.swift */,
 				58B8399BAEF9B842D51A19A0 /* Alamofire */,
 				1BCAC33EEE6A1A62EED6E16D /* Extension */,
+				58B83E1CAE76D2D81C7F4299 /* RequestBuilder+AsyncAwait.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				1BCAC22A93827B47B631E521 /* Fake.swift in Sources */,
 				58B832697F7A30B43BF2BC47 /* AppDefaults.swift in Sources */,
 				58B830128371379764F5ECCC /* Fonts.swift in Sources */,
+				58B8380FE8B2D79E04CF50E8 /* RequestBuilder+AsyncAwait.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
