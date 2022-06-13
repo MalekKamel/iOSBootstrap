@@ -8,7 +8,6 @@ import Alamofire
 
 public enum AppError: Swift.Error {
     case invalidURL
-    case httpCode(HTTPCode)
     case unexpectedResponse
     case internet
     case connection
@@ -28,7 +27,6 @@ extension AppError: LocalizedError {
     public var errorDescription: String? {
         switch self {
         case .invalidURL: return "🥴 Invalid URL"
-        case let .httpCode(code): return "🤬 Unexpected HTTP code: \(code)"
         case .unexpectedResponse: return "🤯 Unexpected response from the server"
 
         case .internet:

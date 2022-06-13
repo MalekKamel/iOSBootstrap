@@ -8,7 +8,7 @@ import Foundation
 public class ErrorProcessor {
     static let shared = ErrorProcessor()
 
-    func process(error: Swift.Error, presentable: Presentable?) {
+    func process(error: Swift.Error, presentable: AsyncManDelegate?) {
         if let pluggableProcessor = self as? PluggableErrorProcessor,
            pluggableProcessor.handle(error: error, presentable: presentable) {
             return
@@ -26,7 +26,7 @@ public class ErrorProcessor {
     }
 }
 
-private func handle(error: Swift.Error, presentable: Presentable?) -> Bool {
+private func handle(error: Swift.Error, presentable: AsyncManDelegate?) -> Bool {
     let handler: ErrorHandler? = AsyncMan.errorHandlers.first(where: {
         $0.canHandle(error: error)
     })
@@ -39,7 +39,7 @@ private func handle(error: Swift.Error, presentable: Presentable?) -> Bool {
     return true
 }
 
-private func handleNSError(error: NSError, presentable: Presentable?) -> Bool {
+private func handleNSError(error: NSError, presentable: AsyncManDelegate?) -> Bool {
     let handler: NSErrorHandler? = AsyncMan.nsErrorHandlers.first(where: {
         $0.canHandle(error: error)
     })
@@ -52,6 +52,6 @@ private func handleNSError(error: NSError, presentable: Presentable?) -> Bool {
     return true
 }
 
-private func unknownError(error: Swift.Error, presentable: Presentable?) {
+private func unknownError(error: Swift.Error, presentable: AsyncManDelegate?) {
     presentable?.onHandleErrorFailed(error: error)
 }

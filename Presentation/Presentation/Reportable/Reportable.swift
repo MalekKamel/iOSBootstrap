@@ -52,19 +52,6 @@ public extension Reportable {
 
     func show(error: String, title: String = "") {
         UINotificationFeedbackGenerator().notificationOccurred(.error)
-
-        let nsError = NSError (
-                domain: "Internal client error",
-                code: 100,
-                userInfo: [NSLocalizedDescriptionKey: error]
-        )
-
-        AppCrashlytics.record(
-                error: nsError,
-                description: error,
-                failure: error
-        )
-
         showError(
                 title: title,
                 message: error
@@ -83,19 +70,9 @@ public extension Reportable {
     ) {
         AppCrashlytics.record(description: title, failure: message)
 
-        //Handle strings from the backend with \\
-        let filteredTitle =
-                title?.replacingOccurrences(
-                                of: "\\r", with: "\r")
-                        .replacingOccurrences(of: "\\n", with: "\n")
-
-        let filteredMessage = message?
-                .replacingOccurrences(of: "\\r", with: "\r")
-                .replacingOccurrences(of: "\\n", with: "\n")
-
         showSwiftMessage(
-                title: filteredTitle,
-                message: filteredMessage,
+                title: title,
+                message: message,
                 actionTitle: actionTitle,
                 actionBlock: actionBlock,
                 layout: .tabView,

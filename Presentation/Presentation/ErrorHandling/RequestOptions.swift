@@ -10,7 +10,7 @@ public class RequestOptions {
     ///  @return true if the error is handled, false otherwise
     ///  If the error wasn't handled(by returning false), the provided
     ///  handlers will try to handle the error.
-    ///  If all handlers failed, [Presentable#onHandleErrorFailed(Throwable]
+    ///  If all handlers failed, [AsyncManDelegate#onHandleErrorFailed(Throwable]
     ///   will be called
     var inlineHandling: ((Error) -> Bool)? = nil
 

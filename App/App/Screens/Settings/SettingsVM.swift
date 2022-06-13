@@ -8,7 +8,6 @@ import Foundation
 class SettingsVM: AppViewModel {
     public var dataManager: DataManagerContract
     @Published public var loadState: LoadingState = .init()
-    public var bag = CancelableBag()
     public var requester: AsyncMan
 
     public init(dataManager: DataManagerContract, requester: AsyncMan) {

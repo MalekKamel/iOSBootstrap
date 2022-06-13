@@ -18,27 +18,6 @@ internal typealias Font = FontConvertible.Font
 
 // swiftlint:disable identifier_name line_length type_body_length
 internal enum FontFamily {
-  internal enum HelveticaNeue {
-    internal static let condensedBlack = FontConvertible(name: "HelveticaNeue-CondensedBlack", family: "Helvetica Neue", path: "helvetica-neue-condensed-black.ttf")
-    internal static let all: [FontConvertible] = [condensedBlack]
-  }
-  internal enum JFFlat {
-    internal static let light = FontConvertible(name: "JFFlat-Light", family: "JF Flat", path: "JF-Flat-light.ttf")
-    internal static let medium = FontConvertible(name: "JFFlat-Medium", family: "JF Flat", path: "JF-Flat-medium.ttf")
-    internal static let regular = FontConvertible(name: "JFFlat-Regular", family: "JF Flat", path: "JF-Flat-regular.ttf")
-    internal static let all: [FontConvertible] = [light, medium, regular]
-  }
-  internal enum Lato {
-    internal static let heavyItalic = FontConvertible(name: "Lato-HeavyItalic", family: "Lato", path: "Lato-HeavyItalic.ttf")
-    internal static let all: [FontConvertible] = [heavyItalic]
-  }
-  internal enum MavenPro {
-    internal static let black = FontConvertible(name: "MavenProBlack", family: "Maven Pro", path: "MavenPro-black.ttf")
-    internal static let bold = FontConvertible(name: "MavenProBold", family: "Maven Pro", path: "MavenPro-bold.ttf")
-    internal static let medium = FontConvertible(name: "MavenProMedium", family: "Maven Pro", path: "MavenPro-medium.ttf")
-    internal static let regular = FontConvertible(name: "MavenProRegular", family: "Maven Pro", path: "MavenPro-regular.ttf")
-    internal static let all: [FontConvertible] = [black, bold, medium, regular]
-  }
   internal enum Roboto {
     internal static let bold = FontConvertible(name: "Roboto-Bold", family: "Roboto", path: "Roboto-Bold.ttf")
     internal static let light = FontConvertible(name: "Roboto-Light", family: "Roboto", path: "Roboto-Light.ttf")
@@ -46,7 +25,7 @@ internal enum FontFamily {
     internal static let regular = FontConvertible(name: "Roboto-Regular", family: "Roboto", path: "Roboto-Regular.ttf")
     internal static let all: [FontConvertible] = [bold, light, medium, regular]
   }
-  internal static let allCustomFonts: [FontConvertible] = [HelveticaNeue.all, JFFlat.all, Lato.all, MavenPro.all, Roboto.all].flatMap { $0 }
+  internal static let allCustomFonts: [FontConvertible] = [Roboto.all].flatMap { $0 }
   internal static func registerAllCustomFonts() {
     allCustomFonts.forEach { $0.register() }
   }

@@ -6,10 +6,11 @@ public protocol DataManagerContract {
 }
 
 public struct DataManager: DataManagerContract {
+    public static let shared = DataManager()
     public var cartRepo: CartRepo = .shared
 
     public static func build() -> DataManagerContract {
-        DataManager()
+        DataManager.shared
     }
 
 }

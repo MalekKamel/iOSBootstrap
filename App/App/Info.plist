@@ -29,16 +29,6 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>FacebookAdvertiserIDCollectionEnabled</key>
-	<true/>
-	<key>FacebookAppID</key>
-	<string>$(FACEBOOK_ID)</string>
-	<key>FacebookAutoLogAppEventsEnabled</key>
-	<true/>
-	<key>FacebookDisplayName</key>
-	<string>$(PRODUCT_NAME)</string>
-	<key>FirebaseScreenReportingEnabled</key>
-	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -48,14 +38,10 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>JF-Flat-light.ttf</string>
-		<string>JF-Flat-medium.ttf</string>
-		<string>JF-Flat-regular.ttf</string>
-		<string>MavenPro-black.ttf</string>
-		<string>MavenPro-bold.ttf</string>
-		<string>MavenPro-medium.ttf</string>
-		<string>MavenPro-regular.ttf</string>
-		<string>Lato-HeavyItalic</string>
+		<string>Roboto-Bold.ttf</string>
+		<string>Roboto-Light.ttf</string>
+		<string>Roboto-Medium.ttf</string>
+		<string>Roboto-Regular.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

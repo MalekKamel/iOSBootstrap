@@ -5,7 +5,7 @@
 
 import Foundation
 
-public typealias AsyncRequest = () async throws -> Void
+public typealias AsyncOperation = () async throws -> Void
 public typealias AsyncCompletion<T> = (T) -> Void
 
 public struct AsyncMan {
@@ -22,9 +22,9 @@ public struct AsyncMan {
     }
 
     public func request(
-            _ operation: @escaping AsyncRequest,
+            _ operation: @escaping AsyncOperation,
             options: RequestOptions = RequestOptions.defaultOptions(),
-            presentable: Presentable? = nil
+            presentable: AsyncManDelegate? = nil
     ) {
         if options.showLoading {
             presentable?.showLoading()
@@ -55,7 +55,7 @@ public struct AsyncMan {
         }
     }
 
-    private func handle(error: Error, presentable: Presentable?) {
+    private func handle(error: Error, presentable: AsyncManDelegate?) {
         ErrorProcessor.shared.process(error: error, presentable: presentable)
     }
 }

@@ -8,5 +8,5 @@ import Foundation
 /// Generic error handler
 public protocol ErrorHandler {
     func canHandle(error: Swift.Error) -> Bool
-    func handle(error: Swift.Error, presentable: Presentable?)
+    func handle(error: Swift.Error, presentable: AsyncManDelegate?)
 }

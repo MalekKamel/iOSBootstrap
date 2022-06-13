@@ -8,5 +8,5 @@ import Data
 
 public protocol ResumableHandler {
     func canHandle(error: Swift.Error) -> Bool
-    func handle(error: Swift.Error, presentable: Presentable?) -> AnyPublisher<Any, AppError>
+    func handle(error: Swift.Error, presentable: AsyncManDelegate?) -> AnyPublisher<Any, AppError>
 }

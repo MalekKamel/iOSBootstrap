@@ -6,7 +6,7 @@ import Foundation
 
 
 /// This protocol is responsible for presenting UI
-public protocol Presentable {
+public protocol AsyncManDelegate {
 
     /// show loading indicator
     func showLoading()
@@ -21,7 +21,7 @@ public protocol Presentable {
     func onHandleErrorFailed(error: Error)
 }
 
-public class DummyPresentable: Presentable {
+public class DummyPresentable: AsyncManDelegate {
     public init() {
     }
 

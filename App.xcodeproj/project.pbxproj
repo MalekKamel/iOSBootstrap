@@ -13,29 +13,20 @@
 		180BE3DC25D6B30B0047737E /* Data.framework in Copy Framworks */ = {isa = PBXBuildFile; fileRef = 180BE3D725D6B30B0047737E /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		180BE3DD25D6B30B0047737E /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180BE3D825D6B30B0047737E /* Presentation.framework */; };
 		180BE3DE25D6B30B0047737E /* Presentation.framework in Copy Framworks */ = {isa = PBXBuildFile; fileRef = 180BE3D825D6B30B0047737E /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1BCAC0DA2BB608BD6EC7B14A /* JF-Flat-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BCAC86F50739E9BCA62B3EC /* JF-Flat-light.ttf */; };
 		1BCAC10D459DD5D5D1A36273 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACBE71E2F67854031072A /* RatingView.swift */; };
-		1BCAC10E2865B21FBEF38FE3 /* Lato-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BCAC69C84BDD28E6A5F6004 /* Lato-HeavyItalic.ttf */; };
 		1BCAC1406EDD21A72D58B306 /* AppTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACBB2216030DAB364C6F7 /* AppTabBar.swift */; };
-		1BCAC18002092CD91E32198A /* JF-Flat-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BCAC89A6DDC453CCE3292BB /* JF-Flat-medium.ttf */; };
-		1BCAC2671B4D476D604620BD /* MavenPro-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BCAC6BBD976625F4A431E27 /* MavenPro-medium.ttf */; };
 		1BCAC276396D946E42C39CD4 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACCFB51A78539A036F7A7 /* ShareSheet.swift */; };
 		1BCAC2BCBB0E202C33E84AEB /* ChipGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACC3090183D3DAC565759 /* ChipGroup.swift */; };
 		1BCAC2BF785FC81709B918F3 /* Array+Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACE80E6F44DE1DCDC30CC /* Array+Split.swift */; };
-		1BCAC30B0E499B3D4A6596BC /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1BCACA180A6ABF5AEB6656A0 /* SIL Open Font License.txt */; };
-		1BCAC41629E63AD5A7A31784 /* MavenPro-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BCAC75D518E76743FC156BC /* MavenPro-regular.ttf */; };
 		1BCAC525DCB77E0AB5986861 /* CartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC7E6C49DBC75761F8C8A /* CartScreen.swift */; };
 		1BCAC5466D932298DF600A5F /* CartVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC5BCA9A1913B7BB192AE /* CartVM.swift */; };
 		1BCAC54F8461DFB653E9DA8F /* ProductDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC0D7FE13AF1260085AFF /* ProductDetailScreen.swift */; };
 		1BCAC58EB9A5685DEF9073B1 /* SettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACF7714A9445E784F0C5D /* SettingsVM.swift */; };
 		1BCAC6A5AB6CC3AC3074C5F1 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC9AB6114FC3E77DE27E8 /* HomeScreen.swift */; };
-		1BCAC7A1CB7ECA40F3FE4452 /* JF-Flat-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BCAC8EBC4F0560BE5EC04CA /* JF-Flat-regular.ttf */; };
 		1BCAC882BDCB9598C38ED62F /* ProductsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC6B73DF65E3206A868FD /* ProductsScreen.swift */; };
 		1BCAC955D5EED4F5DF87B3E4 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC67B0472DF1D5A3156D5 /* SettingsScreen.swift */; };
-		1BCAC9D99DAC6718AD8BCC8E /* MavenPro-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BCAC7FF15C4F96E2C915F34 /* MavenPro-bold.ttf */; };
 		1BCACB030EB77801C3140FD4 /* AppBundleToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC7A81F40A490CE075F67 /* AppBundleToken.swift */; };
 		1BCACB87F9169D9C49330F10 /* FontFamily+SwiftUIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACC1E18EE09AFDD029DC1 /* FontFamily+SwiftUIFont.swift */; };
-		1BCACBA3B32EF2181BB3A7F7 /* MavenPro-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BCACE3850DDE547A622ECEE /* MavenPro-black.ttf */; };
 		1BCACBE4610820AFA6B93606 /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACEF78B64B5E82353FE3C /* ProductItemView.swift */; };
 		1BCACD2F6E64776612256EC6 /* ProductDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC6F56BE3C441D7370C94 /* ProductDetailVM.swift */; };
 		1BCACE1842A87F9EDEB80378 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC3A29F1422984BA234AB /* HomeVM.swift */; };
@@ -56,7 +47,6 @@
 		F2772FB126FDB4F20047D753 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2772F9A26FDB4F10047D753 /* Roboto-Medium.ttf */; };
 		F2772FB226FDB4F20047D753 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2772F9B26FDB4F10047D753 /* Roboto-Light.ttf */; };
 		F2772FB326FDB4F20047D753 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2772F9C26FDB4F10047D753 /* Roboto-Regular.ttf */; };
-		F2772FB426FDB4F20047D753 /* helvetica-neue-condensed-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2772F9D26FDB4F10047D753 /* helvetica-neue-condensed-black.ttf */; };
 		F2772FB526FDB4F20047D753 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2772F9E26FDB4F10047D753 /* Roboto-Bold.ttf */; };
 		F2772FB626FDB4F20047D753 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2772FA026FDB4F10047D753 /* Localizable.strings */; };
 		F2772FBC26FDB5210047D753 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2772FBA26FDB5210047D753 /* AppTests.swift */; };
@@ -120,25 +110,16 @@
 		1BCAC3A29F1422984BA234AB /* HomeVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		1BCAC5BCA9A1913B7BB192AE /* CartVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartVM.swift; sourceTree = "<group>"; };
 		1BCAC67B0472DF1D5A3156D5 /* SettingsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
-		1BCAC69C84BDD28E6A5F6004 /* Lato-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-HeavyItalic.ttf"; sourceTree = "<group>"; };
 		1BCAC6B73DF65E3206A868FD /* ProductsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsScreen.swift; sourceTree = "<group>"; };
-		1BCAC6BBD976625F4A431E27 /* MavenPro-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "MavenPro-medium.ttf"; sourceTree = "<group>"; };
 		1BCAC6F56BE3C441D7370C94 /* ProductDetailVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailVM.swift; sourceTree = "<group>"; };
-		1BCAC75D518E76743FC156BC /* MavenPro-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "MavenPro-regular.ttf"; sourceTree = "<group>"; };
 		1BCAC7A81F40A490CE075F67 /* AppBundleToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBundleToken.swift; sourceTree = "<group>"; };
 		1BCAC7E6C49DBC75761F8C8A /* CartScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartScreen.swift; sourceTree = "<group>"; };
-		1BCAC7FF15C4F96E2C915F34 /* MavenPro-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "MavenPro-bold.ttf"; sourceTree = "<group>"; };
-		1BCAC86F50739E9BCA62B3EC /* JF-Flat-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "JF-Flat-light.ttf"; sourceTree = "<group>"; };
-		1BCAC89A6DDC453CCE3292BB /* JF-Flat-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "JF-Flat-medium.ttf"; sourceTree = "<group>"; };
-		1BCAC8EBC4F0560BE5EC04CA /* JF-Flat-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "JF-Flat-regular.ttf"; sourceTree = "<group>"; };
 		1BCAC9AB6114FC3E77DE27E8 /* HomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		1BCACA180A6ABF5AEB6656A0 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
 		1BCACBB2216030DAB364C6F7 /* AppTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabBar.swift; sourceTree = "<group>"; };
 		1BCACBE71E2F67854031072A /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		1BCACC1E18EE09AFDD029DC1 /* FontFamily+SwiftUIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FontFamily+SwiftUIFont.swift"; sourceTree = "<group>"; };
 		1BCACC3090183D3DAC565759 /* ChipGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChipGroup.swift; sourceTree = "<group>"; };
 		1BCACCFB51A78539A036F7A7 /* ShareSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
-		1BCACE3850DDE547A622ECEE /* MavenPro-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "MavenPro-black.ttf"; sourceTree = "<group>"; };
 		1BCACE80E6F44DE1DCDC30CC /* Array+Split.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Split.swift"; sourceTree = "<group>"; };
 		1BCACEF78B64B5E82353FE3C /* ProductItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
 		1BCACF257553C396C60A88D6 /* CartItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItemView.swift; sourceTree = "<group>"; };
@@ -164,7 +145,6 @@
 		F2772F9A26FDB4F10047D753 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		F2772F9B26FDB4F10047D753 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		F2772F9C26FDB4F10047D753 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		F2772F9D26FDB4F10047D753 /* helvetica-neue-condensed-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helvetica-neue-condensed-black.ttf"; sourceTree = "<group>"; };
 		F2772F9E26FDB4F10047D753 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		F2772FA126FDB4F10047D753 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F2772FA226FDB4F10047D753 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -426,17 +406,7 @@
 				F2772F9A26FDB4F10047D753 /* Roboto-Medium.ttf */,
 				F2772F9B26FDB4F10047D753 /* Roboto-Light.ttf */,
 				F2772F9C26FDB4F10047D753 /* Roboto-Regular.ttf */,
-				F2772F9D26FDB4F10047D753 /* helvetica-neue-condensed-black.ttf */,
 				F2772F9E26FDB4F10047D753 /* Roboto-Bold.ttf */,
-				1BCAC89A6DDC453CCE3292BB /* JF-Flat-medium.ttf */,
-				1BCACE3850DDE547A622ECEE /* MavenPro-black.ttf */,
-				1BCAC6BBD976625F4A431E27 /* MavenPro-medium.ttf */,
-				1BCAC8EBC4F0560BE5EC04CA /* JF-Flat-regular.ttf */,
-				1BCAC75D518E76743FC156BC /* MavenPro-regular.ttf */,
-				1BCAC86F50739E9BCA62B3EC /* JF-Flat-light.ttf */,
-				1BCAC69C84BDD28E6A5F6004 /* Lato-HeavyItalic.ttf */,
-				1BCAC7FF15C4F96E2C915F34 /* MavenPro-bold.ttf */,
-				1BCACA180A6ABF5AEB6656A0 /* SIL Open Font License.txt */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -594,16 +564,6 @@
 				F2772FAE26FDB4F20047D753 /* Assets.xcassets in Resources */,
 				F2772FAD26FDB4F20047D753 /* Colors.xcassets in Resources */,
 				F2772FB526FDB4F20047D753 /* Roboto-Bold.ttf in Resources */,
-				F2772FB426FDB4F20047D753 /* helvetica-neue-condensed-black.ttf in Resources */,
-				1BCAC18002092CD91E32198A /* JF-Flat-medium.ttf in Resources */,
-				1BCACBA3B32EF2181BB3A7F7 /* MavenPro-black.ttf in Resources */,
-				1BCAC2671B4D476D604620BD /* MavenPro-medium.ttf in Resources */,
-				1BCAC7A1CB7ECA40F3FE4452 /* JF-Flat-regular.ttf in Resources */,
-				1BCAC41629E63AD5A7A31784 /* MavenPro-regular.ttf in Resources */,
-				1BCAC0DA2BB608BD6EC7B14A /* JF-Flat-light.ttf in Resources */,
-				1BCAC10E2865B21FBEF38FE3 /* Lato-HeavyItalic.ttf in Resources */,
-				1BCAC9D99DAC6718AD8BCC8E /* MavenPro-bold.ttf in Resources */,
-				1BCAC30B0E499B3D4A6596BC /* SIL Open Font License.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -870,7 +830,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 387;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XKJKXVFT76;
 				"EXCLUDED_ARCHS[sdk=appletvsimulator*]" = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -881,7 +841,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)";
 				PRODUCT_NAME = BootStrap;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -903,7 +863,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 387;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XKJKXVFT76;
 				"EXCLUDED_ARCHS[sdk=appletvsimulator*]" = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -914,7 +874,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1107,7 +1067,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 387;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XKJKXVFT76;
 				"EXCLUDED_ARCHS[sdk=appletvsimulator*]" = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -1118,7 +1078,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)";
 				PRODUCT_NAME = BootStrap;
 				PROVISIONING_PROFILE_SPECIFIER = "";

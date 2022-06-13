@@ -8,7 +8,7 @@ import Foundation
 public protocol NSErrorHandler {
     var supportedErrors: [Int] { get set }
     func canHandle(error: NSError) -> Bool
-    func handle(error: NSError, presentable: Presentable?)
+    func handle(error: NSError, presentable: AsyncManDelegate?)
 }
 
 /// Default implementation for canHandle(:error)

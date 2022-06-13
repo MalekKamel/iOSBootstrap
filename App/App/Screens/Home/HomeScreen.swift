@@ -33,7 +33,6 @@ struct HomeScreen: AppScreen {
                 ])
     }
 
-
 }
 
 extension HomeScreen {

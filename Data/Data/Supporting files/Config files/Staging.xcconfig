@@ -11,6 +11,6 @@
 
 #include "Base.xcconfig"
 
-API_BASE_URL = http:/$()/34.233.42.120:7000
+API_BASE_URL = http:/$()/www.google.com
 
 

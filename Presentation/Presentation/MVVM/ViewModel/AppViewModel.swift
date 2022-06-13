@@ -7,19 +7,21 @@ import Data
 import Core
 import Combine
 
-public protocol AppViewModel: ObservableObject, Presentable {
+public protocol AppViewModel: ObservableObject, AsyncManDelegate {
     var requester: AsyncMan { get }
     var loadState: LoadingState { get set }
-    var bag: CancelableBag { get set }
     var dataManager: DataManagerContract { get set }
 
     func request(
-            options: RequestOptions,
-            _ operation: @escaping AsyncRequest
+            inlineHandling: ((Error) -> Bool)?,
+            doOnError: ((Error) -> Void)?,
+            showLoading: Bool,
+            hideLoading: Bool,
+            _ operation: @escaping AsyncOperation
     )
 }
 
-// MARK:- Presentable implementation
+// MARK:- AsyncManDelegate implementation
 public extension AppViewModel {
 
     func showLoading() {
@@ -42,13 +44,21 @@ public extension AppViewModel {
 public extension AppViewModel {
 
     func request(
-            options: RequestOptions = RequestOptions.defaultOptions(),
-            _ operation: @escaping AsyncRequest
+            inlineHandling: ((Error) -> Bool)? = nil,
+            doOnError: ((Error) -> Void)? = nil,
+            showLoading: Bool = true,
+            hideLoading: Bool = true,
+            _ operation: @escaping AsyncOperation
     ) {
-        requester
-                .request(operation,
-                        options: options,
-                        presentable: self)
+        let options = RequestOptions.Builder()
+                .inlineErrorHandling(inlineHandling)
+                .doOnError(doOnError)
+                .showLoading(showLoading)
+                .hideLoading(hideLoading)
+                .build()
+        requester.request(
+                operation,
+                options: options,
+                presentable: self)
     }
-
 }
