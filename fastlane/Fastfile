@@ -12,9 +12,17 @@
 
 # Uncomment the line if you want fastlane to automatically update itself
 # Types: "app-store", "validation", "ad-hoc", "package", "enterprise", "development", "developer-id", "mac-application"
-# latest_testflight_build_number
-# ENV["GYM_PROJECT"] = "App/App.xcodeproj"
-# ENV["GYM_WORKSPACE"] = "App/App.xcodeproj"
+# ENV["GYM_PROJECT"] = "PROJECT_NAME.xcodeproj"
+# ENV["GYM_WORKSPACE"] = "PROJECT_NAME.xcodeproj"
+
+BUILD_CONFIG_DEBUG = "Debug"
+BUILD_CONFIG_TESTING = "Testing"
+BUILD_CONFIG_STAGING = "Staging"
+BUILD_CONFIG_RELEASE = "Release"
+
+DESTINATION_FIREBASE = "Firebase"
+DESTINATION_TESTFLIGHT = "TestFlight"
+PROJECT_NAME="App.xcodeproj"
 
 update_fastlane
 default_platform(:ios)
@@ -25,58 +33,58 @@ platform :ios do
 # Firebase
 ################################################################################
 
-  desc "Firebase distribute staging"
-  lane :firebase_distribute_staging do
-    distribute_firebase(
-        configuration: "Staging",
-        googleServicesInfoName: "GoogleService-Info-Staging",
-        incrementBuild: true)
-  end
   desc "Firebase distribute debug"
   lane :firebase_distribute_debug do
     distribute_firebase(
-        configuration: "Debug",
-        googleServicesInfoName: "GoogleService-Info-Staging",
+        configuration: BUILD_CONFIG_DEBUG,
+        incrementBuild: true)
+  end
+  desc "Firebase distribute debug"
+  lane :firebase_distribute_testing do
+    distribute_firebase(
+        configuration: BUILD_CONFIG_TESTING,
         incrementBuild: true)
   end
 
-  desc "Firebase distribute internal"
-  lane :firebase_distribute_internal do
+  desc "Firebase distribute staging"
+  lane :firebase_distribute_staging do
     distribute_firebase(
-        configuration: "Internal",
-        googleServicesInfoName: "GoogleService-Info-Staging",
+        configuration: BUILD_CONFIG_STAGING,
         incrementBuild: true)
   end
 
   desc "Firebase distribute release"
   lane :firebase_distribute_release do
     distribute_firebase(
-        configuration: "Release",
-        googleServicesInfoName: "GoogleService-Info",
+        configuration: BUILD_CONFIG_RELEASE,
         incrementBuild: true)
+  end
+
+  desc "Firebase distribute debug"
+  lane :firebase_distribute_no_increment_debug do
+    distribute_firebase(
+        configuration: BUILD_CONFIG_DEBUG,
+        incrementBuild: false)
+  end
+
+  desc "Firebase distribute debug"
+  lane :firebase_distribute_no_increment_testing do
+    distribute_firebase(
+        configuration: BUILD_CONFIG_TESTING,
+        incrementBuild: false)
   end
 
   desc "Firebase distribute staging"
   lane :firebase_distribute_no_increment_staging do
     distribute_firebase(
-        configuration: "Staging",
-        googleServicesInfoName: "GoogleService-Info-Staging",
+        configuration: BUILD_CONFIG_STAGING,
         incrementBuild: false)
   end
-  desc "Firebase distribute debug"
-  lane :firebase_distribute_no_increment_debug do
-    distribute_firebase(
-        configuration: "Debug",
-        googleServicesInfoName: "GoogleService-Info-Staging",
-        incrementBuild: false)
-  end
-
 
   desc "Firebase distribute release"
   lane :firebase_distribute_no_increment_release do
     distribute_firebase(
-        configuration: "Release",
-        googleServicesInfoName: "GoogleService-Info",
+        configuration: BUILD_CONFIG_RELEASE,
         incrementBuild: false)
   end
 
@@ -85,34 +93,122 @@ platform :ios do
 ################################################################################
 
     desc "TestFlight Staging"
-    lane :testflight_distribute_staging do
-        distribute_testflight(configuration: "Staging")
+    lane :testflight_distribute_debug do
+        distribute_testflight(configuration: BUILD_CONFIG_DEBUG, incrementBuild: true)
      end
 
-    desc "TestFlight Internal"
-    lane :testflight_distribute_internal do
-        distribute_testflight(configuration: "Internal")
+    desc "TestFlight Staging"
+    lane :testflight_distribute_testing do
+        distribute_testflight(configuration: BUILD_CONFIG_TESTING, incrementBuild: true)
+     end
+
+    desc "TestFlight Staging"
+    lane :testflight_distribute_staging do
+        distribute_testflight(configuration: BUILD_CONFIG_STAGING, incrementBuild: true)
      end
 
     desc "TestFlight Release"
     lane :testflight_distribute_release do
-        distribute_testflight(configuration: "Release")
+        distribute_testflight(configuration: BUILD_CONFIG_RELEASE, incrementBuild: true)
+     end
+
+    desc "TestFlight Staging"
+    lane :testflight_distribute_no_increment_debug do
+        distribute_testflight(configuration: BUILD_CONFIG_DEBUG, incrementBuild: false)
+     end
+
+    desc "TestFlight Staging"
+    lane :testflight_distribute_no_increment_testing do
+        distribute_testflight(configuration: BUILD_CONFIG_TESTING, incrementBuild: false)
+     end
+
+    desc "TestFlight Staging"
+    lane :testflight_distribute_no_increment_staging do
+        distribute_testflight(configuration: BUILD_CONFIG_STAGING, incrementBuild: false)
+     end
+
+    desc "TestFlight Release"
+    lane :testflight_distribute_no_increment_release do
+        distribute_testflight(configuration: BUILD_CONFIG_RELEASE, incrementBuild: false)
      end
 
 ################################################################################
-# AppStore
+# Slack
 ################################################################################
 
-    desc "AppStore release"
-    lane :appstore_distribute_release do
-        match_appstore_connect
-        # TODO: check this code functionality
-        # sync_code_signing(type: "appstore")
-        increment_build_number(build_number: app_store_build_number + 1)
-        build_application(configuration: "Release", method: "app-store")
-        upload_to_app_store
-        slack(message: "Successfully uploaded a new App Store build")
-   end
+    desc "Test Slack integration"
+    lane :send_slack_test do
+        send_slack_firebase_debug
+        send_slack_firebase_staging
+        send_slack_firebase_release
+        send_slack_testflight_debug
+        send_slack_testflight_staging
+        send_slack_testflight_release
+    end
+
+    desc "Test Slack integration"
+    lane :send_slack_firebase_debug do
+        slack_new_build(configuration: BUILD_CONFIG_DEBUG, destination: DESTINATION_FIREBASE)
+    end
+
+    desc "Test Slack integration"
+    lane :send_slack_firebase_testing do
+        slack_new_build(configuration: BUILD_CONFIG_TESTING, destination: DESTINATION_FIREBASE)
+    end
+
+    desc "Test Slack integration"
+    lane :send_slack_firebase_staging do
+        slack_new_build(configuration: BUILD_CONFIG_STAGING, destination: DESTINATION_FIREBASE)
+    end
+
+    desc "Test Slack integration"
+    lane :send_slack_firebase_release do
+        slack_new_build(configuration: BUILD_CONFIG_RELEASE, destination: DESTINATION_FIREBASE)
+    end
+
+    desc "Test Slack integration"
+    lane :send_slack_testflight_debug do
+        slack_new_build(configuration: BUILD_CONFIG_DEBUG, destination: DESTINATION_TESTFLIGHT)
+    end
+
+    desc "Test Slack integration"
+    lane :send_slack_testflight_testing do
+        slack_new_build(configuration: BUILD_CONFIG_TESTING, destination: DESTINATION_TESTFLIGHT)
+    end
+
+    desc "Test Slack integration"
+    lane :send_slack_testflight_staging do
+        slack_new_build(configuration: BUILD_CONFIG_STAGING, destination: DESTINATION_TESTFLIGHT)
+    end
+
+    desc "Test Slack integration"
+    lane :send_slack_testflight_release do
+        slack_new_build(configuration: BUILD_CONFIG_RELEASE, destination: DESTINATION_TESTFLIGHT)
+    end
+
+################################################################################
+# Test configuration
+################################################################################
+
+    desc "Test configuration"
+    lane :test_config_description do
+       puts configuration_description(configuration: BUILD_CONFIG_DEBUG)
+       puts configuration_description(configuration: BUILD_CONFIG_TESTING)
+       puts configuration_description(configuration: BUILD_CONFIG_STAGING)
+       puts configuration_description(configuration: BUILD_CONFIG_RELEASE)
+    end
+
+################################################################################
+# Test release  notes
+################################################################################
+
+    desc "Test configuration"
+    lane :test_release_notes do
+       puts release_notes_with_config_and_version(configuration: BUILD_CONFIG_DEBUG)
+       puts release_notes_with_config_and_version(configuration: BUILD_CONFIG_TESTING)
+       puts release_notes_with_config_and_version(configuration: BUILD_CONFIG_STAGING)
+       puts release_notes_with_config_and_version(configuration: BUILD_CONFIG_RELEASE)
+    end
 
 ################################################################################
 # Run tests
@@ -132,38 +228,46 @@ platform :ios do
         app_store_connect_api_key(
             key_id: "TODO",
             issuer_id: "TODO",
-            key_filepath: "./TODO",
-            duration: 1200, # optional (maximum 1200)
-            in_house: false, # optional but may be required if using match/sigh
+            key_content: "TODO",
+            is_key_content_base64: true
         )
       end
 
-    def distribute_testflight(configuration: String)
+    def distribute_testflight(
+            configuration: String,
+            incrementBuild: Boolean)
             match_appstore_connect
-            increment_build_number(build_number: latest_testflight_build_number + 1)
+
+            if incrementBuild
+            bump_version(configuration: configuration)
+            end
+
             build_application(configuration: configuration, method: "app-store")
-            upload_to_testflight(skip_waiting_for_build_processing: true)
+            upload_to_testflight(
+                changelog: release_notes_with_config_and_version(configuration: configuration),
+                skip_waiting_for_build_processing: true
+            )
+            slack_new_build(configuration: configuration, destination: DESTINATION_TESTFLIGHT)
     end
 
     def distribute_firebase(
            configuration: String,
-           googleServicesInfoName: String,
            incrementBuild: Boolean)
             match_appstore_connect
 
             if incrementBuild
-                increment_build_number
+            bump_version(configuration: configuration)
             end
 
-            build_application(configuration: configuration, method: "ad-hoc")
+            build_application(configuration: configuration, method: "development")
 
             firebase_app_distribution(
-                app: "1:925481789930:ios:4dd556c1b96430352f2a93",
-                googleservice_info_plist_path: "./App/App/Resources/Google Service info/" + googleServicesInfoName + ".plist",
-                testers: "TODO",
-                release_notes: "",
+                googleservice_info_plist_path: google_service_info_file_name(configuration: configuration),
+                groups: "TESTERS GROUP HERE",
+                release_notes: release_notes_with_config_and_version(configuration: configuration),
                 debug: true
           )
+          slack_new_build(configuration: configuration, destination: DESTINATION_FIREBASE)
     end
 
     def build_application(configuration: String, method: String)
@@ -176,6 +280,92 @@ platform :ios do
                 },
                 include_bitcode: false
             )
+    end
+
+    def bump_version(configuration: String)
+        latest_release = firebase_app_distribution_get_latest_release(app: firebase_app_id(configuration: configuration))
+        increment_build_number({ build_number: latest_release[:buildVersion].to_i + 1 })
+    end
+
+    def current_version()
+        get_version_number(xcodeproj: PROJECT_NAME, target: "#{ENV['SCHEME']}")
+    end
+
+    def current_version_code()
+        get_build_number(xcodeproj: PROJECT_NAME)
+    end
+
+    def release_notes_with_config_and_version(configuration: String)
+        "#" +
+        configuration_description(configuration: configuration) +
+        " " +
+        version_description() +
+        "\n\n" +
+        File.read("./release_notes")
+    end
+
+    def release_notes()
+        File.read("./release_notes")
+    end
+
+    def slack_release_notes()
+      release_notes() +
+      "\n\n" +
+      "<!subteam^TESTING GROUP ID SHOULD BE HERE>"
+    end
+
+    def slack_new_build(configuration: String, destination: String)
+        @notes = "#iOS " +
+                 ENV['APP_NAME'] +
+                 " " +
+                 version_description() +
+                 " " +
+                 configuration_description(configuration: configuration) +
+                 " [" +
+                 destination +
+                 "]"
+        slack(
+            message: @notes,
+            payload: {
+                    "Release Notes" => slack_release_notes()
+            },
+            default_payloads: []
+            )
+    end
+
+    def version_description()
+        "#" +
+        current_version() +
+        "(" +
+        current_version_code() +
+        ")"
+    end
+
+    def configuration_description(configuration: String)
+        case configuration
+            when BUILD_CONFIG_DEBUG then BUILD_CONFIG_DEBUG
+            when BUILD_CONFIG_TESTING then BUILD_CONFIG_TESTING
+            when BUILD_CONFIG_STAGING then BUILD_CONFIG_STAGING
+            when BUILD_CONFIG_RELEASE then "Production"
+        end
+    end
+
+    def google_service_info_file_name(configuration: String)
+        case configuration
+            when BUILD_CONFIG_DEBUG then "GoogleService-Info-Debug.plist"
+            when BUILD_CONFIG_TESTING then "GoogleService-Info-Testing.plist"
+            when BUILD_CONFIG_STAGING then "GoogleService-Info-Staging.plist"
+            when BUILD_CONFIG_RELEASE then "GoogleService-Info.plist"
+        end
+    end
+
+    def firebase_app_id(configuration: String)
+        case configuration
+            when BUILD_CONFIG_DEBUG then "TODO"
+            when BUILD_CONFIG_TESTING then "TODO"
+            when BUILD_CONFIG_STAGING then "TODO"
+            when BUILD_CONFIG_RELEASE then "TODO"
+        end
     end
 
 end
