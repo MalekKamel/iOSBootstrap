@@ -7,6 +7,7 @@ import Foundation
 
 public enum BuildConfig {
     case debug
+    case testing
     case release
     case staging
 
@@ -18,10 +19,12 @@ public enum BuildConfig {
         switch rawValue.lowercased() {
         case "debug":
             return .debug
-        case "release":
-            return .release
+        case "testing":
+            return .testing
         case "staging":
             return .staging
+        case "release":
+            return .release
         default:
             return .release
         }
@@ -31,8 +34,24 @@ public enum BuildConfig {
         current == .debug
     }
 
+    public static func isNotDebug() -> Bool {
+        !isDebug()
+    }
+
+    public static func isTesting() -> Bool {
+        current == .testing
+    }
+
+    public static func isNotTesting() -> Bool {
+        !isTesting()
+    }
+
     public static func isStaging() -> Bool {
         current == .staging
+    }
+
+    public static func isNotStaging() -> Bool {
+        !isStaging()
     }
 
     public static func isRelease() -> Bool {
