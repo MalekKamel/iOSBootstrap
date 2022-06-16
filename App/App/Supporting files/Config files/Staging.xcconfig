@@ -11,7 +11,7 @@
 
 #include "Base.xcconfig"
 
-APP_NAME = $(inherited)Staging
+APP_NAME = $(inherited)-Staging
 
 BASE_BUNDLE_IDENTIFIER = $(inherited).staging
 

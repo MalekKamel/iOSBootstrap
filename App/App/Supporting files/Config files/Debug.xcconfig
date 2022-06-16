@@ -11,7 +11,7 @@
 
 #include "Base.xcconfig"
 
-APP_NAME = $(inherited)Debug
+APP_NAME = $(inherited)-Debug
 
 BASE_BUNDLE_IDENTIFIER = $(inherited).debug
 
