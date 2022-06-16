@@ -19,13 +19,7 @@ public typealias AssetImageTypeAlias = ImageAsset.Image
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public enum Assets {
-  public static let box = ImageAsset(name: "Box")
-  public static let circle = ImageAsset(name: "Circle")
-  public static let spiral = ImageAsset(name: "Spiral")
-  public static let triangle = ImageAsset(name: "Triangle")
-  public static let icDownArrow = ImageAsset(name: "ic-downArrow")
-  public static let icBack = ImageAsset(name: "icBack")
-  public static let sandwich = ImageAsset(name: "sandwich")
+  public static let product01 = ImageAsset(name: "product01")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "ic-more.png",
+      "filename" : "product01.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ic-more@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ic-more@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
