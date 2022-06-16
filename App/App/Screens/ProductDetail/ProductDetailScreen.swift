@@ -63,7 +63,7 @@ struct ProductDetailScreen: AppScreen {
                             DismissLink {
                                 HStack {
                                     Image(systemName: "chevron.backward").foregroundColor(.blue)
-                                    Text("Back").foregroundColor(.blue)
+                                    Text(Strings.back).foregroundColor(.blue)
                                 }
                             }
                                     .buttonStyle(PlainButtonStyle())
@@ -183,7 +183,7 @@ struct ProductDetailScreen: AppScreen {
 
     private func AddToCartButton() -> some View {
         HStack(alignment: .center, spacing: 20) {
-            Text("ADD TO CART")
+            Text(Strings.addToCart)
             Image(systemName: "cart.fill")
         }
                 .padding(.horizontal, 40)
@@ -196,7 +196,7 @@ struct ProductDetailScreen: AppScreen {
 
     private func RemoveFromCartButton() -> some View {
         HStack(alignment: .center, spacing: 20) {
-            Text("IN YOUR CART")
+            Text(Strings.inYourCart)
             Image(systemName: "checkmark")
         }
                 .padding(.horizontal, 40)
@@ -214,9 +214,9 @@ struct ProductDetailScreen: AppScreen {
 
     private func ReviewsTitleView() -> some View {
         VStack {
-            Text("Reviews")
+            Text(Strings.reviews)
                     .font(.system(size: 19, weight: .semibold, design: .rounded))
-            Text("\(item.reviews.count) review\(item.reviews.count == 1 ? "" : "s")")
+            Text("\(item.reviews.count) \(Strings.reviews)")
                     .font(.system(size: 14, weight: .semibold, design: .rounded))
                     .foregroundColor(Color.gray)
         }

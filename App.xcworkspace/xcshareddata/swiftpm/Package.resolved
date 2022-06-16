@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/Open-Bytes/SwiftUINavigator",
         "state": {
           "branch": null,
-          "revision": "93304a2b8f62f40c6419b26ed4e45fe4a9f69829",
-          "version": "0.9.0"
+          "revision": "3d53f2d8a511870a0a2217ebc11a0b73c7992f69",
+          "version": "0.10.0"
         }
       }
     ]

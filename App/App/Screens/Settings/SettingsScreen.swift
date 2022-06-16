@@ -23,7 +23,7 @@ struct SettingsScreen: AppScreen {
 
     private func Header() -> some View {
         VStack(alignment: .center, spacing: 4) {
-            Text("Settings")
+            Text(Strings.settings)
                     .font(.system(size: 16, weight: .bold, design: .rounded))
         }.padding(.bottom, 10)
     }
@@ -31,13 +31,13 @@ struct SettingsScreen: AppScreen {
     private func ItemsView() -> some View {
         List {
             Toggle(isOn: $showNotifications) {
-                Text("Notifications")
+                Text(Strings.notifications)
             }
             Toggle(isOn: $playSounds) {
-                Text("Sound Alerts")
+                Text(Strings.soundAlerts)
             }
             Toggle(isOn: $showAds) {
-                Text("Show Ads")
+                Text(Strings.showAds)
             }
         }
     }

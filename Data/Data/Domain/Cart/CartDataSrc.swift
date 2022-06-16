@@ -8,8 +8,7 @@ import Foundation
 struct CartDataSrc {
 
     func loadCart() async throws -> [String] {
-        try await Task.sleep(nanoseconds: 5_000_000_000)
-        return try await withCheckedThrowingContinuation { continuation in
+        try await withCheckedThrowingContinuation { continuation in
             continuation.resume(returning: ["Cart Item"])
         }
     }

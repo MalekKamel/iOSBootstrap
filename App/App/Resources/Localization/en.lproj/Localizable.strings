@@ -1,1 +1,22 @@
 "name" = "Name";
+"back" = "Back";
+"you_cart" = "Your Cart";
+"done" = "Done";
+"free" = "FREE";
+"total" = "Total";
+"confirm_transaction" = "Confirm Transaction";
+"cart_empty" = "Cart Empty";
+"add_to_cart" = "ADD TO CART";
+"in_your_cart" = "IN YOUR CART";
+"reviews" = "Reviews";
+"review" = "review";
+"catalog" = "Catalog";
+"no_products_to_display" = "No Products To Display";
+"settings" = "Settings";
+"notifications" = "Notifications";
+"sound_alerts" = "Sound Alerts";
+"show_ads" = "Show Ads";
+
+/*
+"" = "";
+*/

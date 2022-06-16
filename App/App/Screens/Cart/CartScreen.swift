@@ -50,7 +50,7 @@ struct CartScreen: AppScreen {
 
     private func HeaderTitle() -> some View {
         VStack(alignment: .center, spacing: 4) {
-            Text("Your Cart")
+            Text(Strings.youCart)
                     .font(.system(size: 16, weight: .bold, design: .rounded))
             Text("\(items.items.count) Item\(items.items.count == 1 ? "" : "s")")
                     .font(.system(size: 13, weight: .semibold, design: .rounded))
@@ -66,7 +66,7 @@ struct CartScreen: AppScreen {
             }
         }) {
             if isEditing {
-                Text("Done")
+                Text(Strings.done)
                         .font(.system(size: 16, weight: .bold, design: .rounded))
                         .padding(.trailing, 20)
             } else {
@@ -110,11 +110,11 @@ struct CartScreen: AppScreen {
 
     private func ShippingView() -> some View {
         VStack(alignment: .center, spacing: 4) {
-            Image("Shipping_Icon")
+            Assets.shippingIcon.swiftUiImage
                     .resizable()
                     .scaledToFit()
                     .frame(width: 20, height: 20, alignment: .center)
-            Text("FREE")
+            Text(Strings.free)
                     .font(.system(size: 14, weight: .semibold, design: .rounded))
         }
                 .frame(width: 60, height: 60, alignment: .center)
@@ -124,7 +124,7 @@ struct CartScreen: AppScreen {
 
     private func TotalView() -> some View {
         VStack(alignment: .leading, spacing: 0) {
-            Text("Total:")
+            Text("\(Strings.total):")
                     .foregroundColor(Color.gray)
                     .font(.system(size: 14, weight: .semibold, design: .default))
             Text("$\(String(format: "%.2f", items.total))")
@@ -147,7 +147,7 @@ struct CartScreen: AppScreen {
 
     private func ConfirmButton() -> some View {
         HStack(alignment: .center, spacing: 12) {
-            Text("Confirm Transaction")
+            Text(Strings.confirmTransaction)
             Image(systemName: "arrow.right")
         }
                 .frame(width: .infinity, height: 60, alignment: .center)
@@ -160,7 +160,7 @@ struct CartScreen: AppScreen {
 
     private func NoItemsView() -> some View {
         HStack(alignment: .center, spacing: 12) {
-            Text("Cart Empty")
+            Text(Strings.cartEmpty)
             Image(systemName: "xmark")
         }
                 .frame(width: .infinity, height: 60, alignment: .center)

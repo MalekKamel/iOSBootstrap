@@ -42,8 +42,6 @@ struct ProductsScreen: AppScreen {
                     .padding()
         }
                 .padding(.bottom, 50)
-                .navigationBarTitle("Catalog", displayMode: .inline)
-                .navigationBarHidden(true)
     }
 
     private func NoProductsView() -> some View {
@@ -55,7 +53,7 @@ struct ProductsScreen: AppScreen {
                     .foregroundColor(Color.gray)
                     .frame(width: 40, height: 40, alignment: .center)
                     .padding(.bottom, 20)
-            Text("No Products To Display")
+            Text(Strings.noProductsToDisplay)
                     .font(.system(size: 17, weight: .semibold, design: .rounded))
                     .foregroundColor(Color.gray)
             Spacer()
