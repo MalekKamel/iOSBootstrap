@@ -16,13 +16,6 @@ swagger-codegen generate -c config.json  -i  api-json.json -o ../../Data/Data/Sw
 
 https://github.com/swagger-api/swagger-codegen
 
-# Important Note:
-
-1- After generating the code, you'll encounter error "cannot have a stored property that recursively contains it". 
-To fix it, you have to convert `Trip` & `Car` to classes instead of structs.
-
-2- We use `--type-mappings object=JSONValue` to avoid having `Any` in the models because it doesn't conform to `Codable`.
-
 ## Cloning Swagger Codegen
 
 git clone https://github.com/swagger-api/swagger-codegen
