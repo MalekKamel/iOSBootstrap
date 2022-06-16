@@ -17,9 +17,9 @@
 		1BCAC1DC45838FE7D1D09A12 /* AppHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC81243AB319445D8F60B /* AppHostingController.swift */; };
 		1BCAC4E1D5B3FD90C677FAB7 /* FontFamily+SwiftUIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC6B2507C410649CA92EA /* FontFamily+SwiftUIFont.swift */; };
 		1BCAC8EA4F30DCE8E8FC4AF1 /* ImageAsset+SwiftUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACC81716D0ECD28761A1E /* ImageAsset+SwiftUIImage.swift */; };
-		1BCACA24EF5E8F34B7D7C400 /* BuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC2F2BA8C0CD5F1A62FC2 /* BuildConfig.swift */; };
 		1BCACD3B764C1783C3C11BF0 /* AppPList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACC88CAAF11CD94A83B96 /* AppPList.swift */; };
 		1BCACD7BBB8AD2F11065DF25 /* CoreSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACAFFEC054543253808A7 /* CoreSceneDelegate.swift */; };
+		58B8327C3339ABCBCCA2B10A /* BuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B836855BAE8D90E3EAB5CD /* BuildConfig.swift */; };
 		58B835B2857C31610AC08049 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58B83A08FA227D7010B9D304 /* Roboto-Regular.ttf */; };
 		58B83B36AE1BD56037F1C879 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58B831CE90A26647B368C52E /* Roboto-Light.ttf */; };
 		58B83BB851426E7469C5FD25 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58B8369EA19578D35DC4D892 /* Roboto-Medium.ttf */; };
@@ -69,7 +69,6 @@
 		186836F42696503D00DDE71E /* AppCrashlytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCrashlytics.swift; sourceTree = "<group>"; };
 		18FAD670285B20CC00C82A35 /* Testing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Testing.xcconfig; sourceTree = "<group>"; };
 		1A54F78EFF4AF0A73B932F39 /* CoreAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAppDelegate.swift; sourceTree = "<group>"; };
-		1BCAC2F2BA8C0CD5F1A62FC2 /* BuildConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildConfig.swift; path = Core/Util/BuildConfig.swift; sourceTree = SOURCE_ROOT; };
 		1BCAC6B2507C410649CA92EA /* FontFamily+SwiftUIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FontFamily+SwiftUIFont.swift"; sourceTree = "<group>"; };
 		1BCAC81243AB319445D8F60B /* AppHostingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHostingController.swift; sourceTree = "<group>"; };
 		1BCAC8DB095242B656E20CDF /* ColorAsset+SwiftUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ColorAsset+SwiftUIColor.swift"; sourceTree = "<group>"; };
@@ -80,6 +79,7 @@
 		58B831CE90A26647B368C52E /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		58B8344BA440A9DF9916BE33 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		58B8354718FB2E0E47843E06 /* Error+Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+Log.swift"; sourceTree = "<group>"; };
+		58B836855BAE8D90E3EAB5CD /* BuildConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildConfig.swift; sourceTree = "<group>"; };
 		58B8369EA19578D35DC4D892 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		58B83A08FA227D7010B9D304 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		6D6C79CE2367935C81299447 /* BuildConfigName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildConfigName.swift; sourceTree = "<group>"; };
@@ -219,7 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				6D6C79CE2367935C81299447 /* BuildConfigName.swift */,
-				1BCAC2F2BA8C0CD5F1A62FC2 /* BuildConfig.swift */,
+				58B836855BAE8D90E3EAB5CD /* BuildConfig.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -412,7 +412,6 @@
 				6D6C787F68DBC9E9DB09E0CF /* BuildConfigName.swift in Sources */,
 				186836F52696503D00DDE71E /* AppCrashlytics.swift in Sources */,
 				FC42509526E0FE8000911471 /* Strings.swift in Sources */,
-				1BCACA24EF5E8F34B7D7C400 /* BuildConfig.swift in Sources */,
 				F2772F7126FDAC3E0047D753 /* Fonts.swift in Sources */,
 				1BCACD3B764C1783C3C11BF0 /* AppPList.swift in Sources */,
 				1BCAC13C0AFBB950DFFC54BF /* CoreBundleToken.swift in Sources */,
@@ -422,6 +421,7 @@
 				1BCACD7BBB8AD2F11065DF25 /* CoreSceneDelegate.swift in Sources */,
 				1BCAC1DC45838FE7D1D09A12 /* AppHostingController.swift in Sources */,
 				58B83D70C5A21C9F4EC494AD /* Error+Log.swift in Sources */,
+				58B8327C3339ABCBCCA2B10A /* BuildConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
