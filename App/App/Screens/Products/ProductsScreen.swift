@@ -15,11 +15,9 @@ struct ProductsScreen: AppScreen {
     private let items: [Product]
     @EnvironmentObject private var navigator: Navigator
     @State var selectedNavigationOptions: [ChipGroup.Item] = []
-    @State var navigationOption: NavigationOption = .push
 
     var bodyContent: some View {
         VStack {
-            NavigationOptionsView()
             ContentView()
         }
     }
@@ -70,7 +68,7 @@ struct ProductsScreen: AppScreen {
             ForEach(items, id: \.uuid) { item in
                 NavigatorLink(
                         destination: ProductDetailScreen.build(item: item),
-                        type: selectedNavigationType) {
+                        type: .push()) {
                     // When this view is clicked, it will trigger the navigation
                     ProductItemView(item: item)
                 }.buttonStyle(PlainButtonStyle())
@@ -78,55 +76,12 @@ struct ProductsScreen: AppScreen {
                 // It's also possible to use Navigator object directly to navigate
                 if false {
                     ProductItemView(item: item).onTapGesture {
-                        navigator.navigate(type: selectedNavigationType) {
+                        navigator.navigate(type: .push()) {
                             ProductDetailScreen.build(item: item)
                         }
                     }.buttonStyle(PlainButtonStyle())
                 }
             }
-        }
-    }
-
-    private var selectedNavigationType: NavigationType {
-        switch navigationOption {
-        case .push:
-            return .push(addToBackStack: true)
-        case .sheet:
-            return .sheet()
-        case .fullSheet:
-            if #available(iOS 14, *) {
-                return .fullSheet
-            }
-            return .sheet()
-        }
-    }
-}
-
-extension ProductsScreen {
-    private func NavigationOptionsView() -> some View {
-        ChipGroup(
-                items: navigationOptions,
-                selectedItems: $selectedNavigationOptions
-        ) { item in
-            navigationOption = .from(item.id)
-        }
-    }
-
-    private var navigationOptions: [ChipGroup.Item] {
-        [
-            ChipGroup.Item(id: NavigationOption.push.rawValue, name: "Push"),
-            ChipGroup.Item(id: NavigationOption.sheet.rawValue, name: "Sheet"),
-            ChipGroup.Item(id: NavigationOption.fullSheet.rawValue, name: "Full Sheet")
-        ]
-    }
-
-    enum NavigationOption: String {
-        case push = "1"
-        case sheet = "2"
-        case fullSheet = "3"
-
-        static func from(_ value: String) -> NavigationOption {
-            NavigationOption(rawValue: value) ?? .push
         }
     }
 }
