@@ -11,7 +11,7 @@ import SwiftUINavigator
 
 struct App: View {
     var body: some View {
-        NavigatorView {
+        NavigatorView(showDefaultNavBar: false) {
             HomeScreen.build()
         }
     }
