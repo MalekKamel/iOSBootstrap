@@ -43,13 +43,17 @@
 		1BCACDC1220E7AF73A1B7534 /* Error+ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC202FCFC3ACC61FCEC75 /* Error+ApiError.swift */; };
 		1BCACE00A12838E57D956A09 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC6C06CBB7B15C9CCB623 /* APIs.swift */; };
 		58B830128371379764F5ECCC /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B833A045B28FCAB1AF6384 /* Fonts.swift */; };
+		58B83134570D4518190F3292 /* MoyaProvider+AsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B836FACCD6E4589B70664C /* MoyaProvider+AsyncAwait.swift */; };
 		58B832697F7A30B43BF2BC47 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B837756F719E7580F599B1 /* AppDefaults.swift */; };
 		58B832AD8D51A05027A75942 /* NetworkActivityLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83BB88083576FD1BFB8E4 /* NetworkActivityLogger.swift */; };
 		58B834B4F096A5958C786DBA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8325B030DFD7CF6A3564A /* Environment.swift */; };
+		58B838A6D49735D1DF8AFCAE /* MoyaProvider+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83ADC1DB17BFC25F72F87 /* MoyaProvider+Create.swift */; };
 		58B83A35B37D38C519AAF12E /* CartDataSrc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83992DC7763085B177DD2 /* CartDataSrc.swift */; };
+		58B83C48D8A1AE44D7A42D7A /* MoyaTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B834D3E187CE5988293131 /* MoyaTargetType.swift */; };
 		58B83CC8BFF402F9A897FCFB /* NetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83685415E4FD2B8326C22 /* NetworkState.swift */; };
 		58B83D69897D6A9A9ECD7223 /* CartRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83E57C4A20231327E11DF /* CartRepo.swift */; };
 		58B83EBA5C24AB95F3AD40FC /* RequestBuilder+AsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8366AC037A4C9252B5447 /* RequestBuilder+AsyncAwait.swift */; };
+		58B83F720E621D367E965BD9 /* MoyaProvider+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B835ADA004F8946634D320 /* MoyaProvider+Request.swift */; };
 		6D6C7B6432FB9152D7430338 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C7625B9BE9768A15DCF82 /* DataManager.swift */; };
 		F2F6C753274EE0890066D794 /* Libs in Frameworks */ = {isa = PBXBuildFile; productRef = F2F6C752274EE0890066D794 /* Libs */; };
 		F2F6C756274EE0B10066D794 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F6C755274EE0B10066D794 /* Core.framework */; };
@@ -110,10 +114,14 @@
 		1BCACFA639B2F7BAD0038668 /* AlamofireImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireImplementations.swift; sourceTree = "<group>"; };
 		58B8325B030DFD7CF6A3564A /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		58B833A045B28FCAB1AF6384 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		58B834D3E187CE5988293131 /* MoyaTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaTargetType.swift; sourceTree = "<group>"; };
+		58B835ADA004F8946634D320 /* MoyaProvider+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Request.swift"; sourceTree = "<group>"; };
 		58B8366AC037A4C9252B5447 /* RequestBuilder+AsyncAwait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RequestBuilder+AsyncAwait.swift"; sourceTree = "<group>"; };
 		58B83685415E4FD2B8326C22 /* NetworkState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkState.swift; sourceTree = "<group>"; };
+		58B836FACCD6E4589B70664C /* MoyaProvider+AsyncAwait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+AsyncAwait.swift"; sourceTree = "<group>"; };
 		58B837756F719E7580F599B1 /* AppDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
 		58B83992DC7763085B177DD2 /* CartDataSrc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartDataSrc.swift; sourceTree = "<group>"; };
+		58B83ADC1DB17BFC25F72F87 /* MoyaProvider+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Create.swift"; sourceTree = "<group>"; };
 		58B83BB88083576FD1BFB8E4 /* NetworkActivityLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkActivityLogger.swift; sourceTree = "<group>"; };
 		58B83E57C4A20231327E11DF /* CartRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartRepo.swift; sourceTree = "<group>"; };
 		6D6C7625B9BE9768A15DCF82 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -301,6 +309,7 @@
 				58B83B84654F75EE4BF1F1E2 /* Environment */,
 				58B8399BAEF9B842D51A19A0 /* Alamofire */,
 				1BCAC33EEE6A1A62EED6E16D /* Extension */,
+				58B83AD3CB04BCC36D200A00 /* Moya */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -321,6 +330,17 @@
 				58B83685415E4FD2B8326C22 /* NetworkState.swift */,
 			);
 			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		58B83AD3CB04BCC36D200A00 /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				58B83ADC1DB17BFC25F72F87 /* MoyaProvider+Create.swift */,
+				58B834D3E187CE5988293131 /* MoyaTargetType.swift */,
+				58B835ADA004F8946634D320 /* MoyaProvider+Request.swift */,
+				58B836FACCD6E4589B70664C /* MoyaProvider+AsyncAwait.swift */,
+			);
+			path = Moya;
 			sourceTree = "<group>";
 		};
 		58B83B84654F75EE4BF1F1E2 /* Environment */ = {
@@ -555,6 +575,10 @@
 				58B83A35B37D38C519AAF12E /* CartDataSrc.swift in Sources */,
 				58B83CC8BFF402F9A897FCFB /* NetworkState.swift in Sources */,
 				58B83EBA5C24AB95F3AD40FC /* RequestBuilder+AsyncAwait.swift in Sources */,
+				58B838A6D49735D1DF8AFCAE /* MoyaProvider+Create.swift in Sources */,
+				58B83C48D8A1AE44D7A42D7A /* MoyaTargetType.swift in Sources */,
+				58B83F720E621D367E965BD9 /* MoyaProvider+Request.swift in Sources */,
+				58B83134570D4518190F3292 /* MoyaProvider+AsyncAwait.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

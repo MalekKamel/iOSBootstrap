@@ -21,7 +21,8 @@ let package = Package(
             .package(url: "https://github.com/onevcat/Kingfisher.git", .branch("version6-xcode13")),
             .package(url: "https://github.com/SwiftKickMobile/SwiftMessages", .upToNextMajor(from: "9.0.0")),
             .package(url: "https://github.com/Open-Bytes/SwiftUINavigator", .upToNextMajor(from: "0.10.0")),
-            .package(url: "https://github.com/hackiftekhar/IQKeyboardManager.git", from: "6.5.0")
+            .package(url: "https://github.com/hackiftekhar/IQKeyboardManager.git", from: "6.5.0"),
+            .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "15.0.0")),
         ],
         targets: [
             // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -30,6 +31,7 @@ let package = Package(
                     name: "Libs",
                     dependencies: [
                         .product(name: "ModelMapper", package: "ModelMapper"),
+                        .product(name: "CombineMoya", package: "Moya"),
                         .product(name: "IQKeyboardManagerSwift", package: "IQKeyboardManager"),
                         "Alamofire",
                         "Kingfisher",
