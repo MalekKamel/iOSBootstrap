@@ -15,9 +15,6 @@ public struct AsyncMan {
     /// Set Error handlers
     public static var errorHandlers: Array<ErrorHandler> = []
 
-    /// Set Resumable handlers
-    public static var resumableHandlers: Array<ResumableHandler> = []
-
     public init() {
     }
 

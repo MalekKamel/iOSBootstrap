@@ -9,11 +9,6 @@ public class ErrorProcessor {
     static let shared = ErrorProcessor()
 
     func process(error: Swift.Error, presentable: AsyncManDelegate?) {
-        if let pluggableProcessor = self as? PluggableErrorProcessor,
-           pluggableProcessor.handle(error: error, presentable: presentable) {
-            return
-        }
-
         if handleNSError(error: error as NSError, presentable: presentable) {
             return
         }
