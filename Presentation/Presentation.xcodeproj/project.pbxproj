@@ -30,7 +30,6 @@
 		58B8370562013832A7012CC5 /* ResumableHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83F812434D3B2630B49C4 /* ResumableHandler.swift */; };
 		58B837059A792AD3752A82F5 /* KeyboardWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B837E586CC4DFB71CC0A95 /* KeyboardWrapper.swift */; };
 		58B8373C15676E9C4C6FEA99 /* AsyncMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83E6FFED928B5766027B1 /* AsyncMan.swift */; };
-		58B8388B9C19AB75F2C0FB95 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B832C717392956C74D2BFC /* HostingController.swift */; };
 		58B838A1C73FCB171025F8C6 /* View+ApplyIf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B832DBF77C8A9C18A6C46F /* View+ApplyIf.swift */; };
 		58B838A5BF45306FB03B4C58 /* RequestOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83D27BFD120A4B7DA11B1 /* RequestOptions.swift */; };
 		58B83970BEC6E3148820ABCE /* PluggableErrorProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8318C175E2A02B40DDE94 /* PluggableErrorProcessor.swift */; };
@@ -100,7 +99,6 @@
 		58B83188B2254A5C2E5CD70B /* AppViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		58B8318C175E2A02B40DDE94 /* PluggableErrorProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluggableErrorProcessor.swift; sourceTree = "<group>"; };
 		58B8328328FD3C6AB4670E7E /* LoadingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
-		58B832C717392956C74D2BFC /* HostingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		58B832DBF77C8A9C18A6C46F /* View+ApplyIf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+ApplyIf.swift"; sourceTree = "<group>"; };
 		58B833C069AAD824F0E38490 /* View+LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+LoadingIndicator.swift"; sourceTree = "<group>"; };
 		58B835BC2FF95B826059E903 /* AppScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppScreen.swift; sourceTree = "<group>"; };
@@ -264,7 +262,6 @@
 				58B83CBE3947E51D1CF4843E /* RemoveListSeparator.swift */,
 				58B8356995CCA16C75E7902E /* Spinner */,
 				58B83D39B4E68F5A1FC441CE /* Extensions */,
-				58B832C717392956C74D2BFC /* HostingController.swift */,
 				58B83A4D709594C45263B480 /* List */,
 			);
 			path = SwiftUI;
@@ -563,7 +560,6 @@
 				FC13AC9126FB72BA003B8A42 /* FontFamily+SwiftUIFont.swift in Sources */,
 				1BCACA2116998C09946D0AD0 /* PresentationBundleToken.swift in Sources */,
 				1BCACCB1AEA376E378AA18DB /* AppRemoteImage.swift in Sources */,
-				58B8388B9C19AB75F2C0FB95 /* HostingController.swift in Sources */,
 				58B832AC262920F4F8B4E601 /* Reporter.swift in Sources */,
 				58B8373C15676E9C4C6FEA99 /* AsyncMan.swift in Sources */,
 				58B83280A52EDC0A1E6FC2B6 /* AppList.swift in Sources */,

@@ -7,6 +7,6 @@ import SwiftUI
 
 public class AppHostingController<Content> : UIHostingController<Content> where Content : View {
     public override var preferredStatusBarStyle: UIStatusBarStyle {
-        .lightContent
+        .darkContent
     }
 }
