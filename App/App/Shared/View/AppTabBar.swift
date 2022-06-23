@@ -8,12 +8,12 @@
 
 import SwiftUI
 
-struct TabItem<CONTENT: View>: Identifiable {
+struct TabItem<Content: View>: Identifiable {
     let id = UUID().uuidString
-    let content: () -> CONTENT
     let image: Image
+    let content: () -> Content
 
-    init(image: Image, @ViewBuilder content: @escaping () -> CONTENT) {
+    init(image: Image, @ViewBuilder content: @escaping () -> Content) {
         self.image = image
         self.content = content
     }
