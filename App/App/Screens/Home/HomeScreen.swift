@@ -18,16 +18,16 @@ struct HomeScreen: AppScreen {
     var bodyContent: some View {
         AppTabBar(
                 tabs: [
-                    TabItem(image: Image(systemName: "house.fill")) {
+                    TabItem(image: Image(systemName: .houseFill)) {
                         ProductsScreen.build(items: Fake.products).eraseToAnyView
                     },
-                    TabItem(image: Image(systemName: "cart.fill")) {
+                    TabItem(image: Image(systemName: .cartFill)) {
                         CartScreen.build().eraseToAnyView
                     },
-                    TabItem(image: Image(systemName: "heart.fill")) {
+                    TabItem(image: Image(systemName: .heartFill)) {
                         ProductsScreen.build(items: Favorites.shared.items).eraseToAnyView
                     },
-                    TabItem(image: Image(systemName: "gear")) {
+                    TabItem(image: Image(systemName: .gear)) {
                         SettingsScreen.build().eraseToAnyView
                     }
                 ])

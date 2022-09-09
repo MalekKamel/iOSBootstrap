@@ -5,6 +5,7 @@
 
 
 import SwiftUI
+import SwiftUINavigator
 
 open class CoreSceneDelegate: UIResponder {
     public var window: UIWindow?
@@ -32,10 +33,12 @@ public struct RootWindow {
     }
 }
 
-public func navigate(toModule rootView: AnyView) {
-    let navView = NavigationView {
+public func navigate<T: View>(resettingRootWith rootView: T) {
+    let navView = NavigatorView(showDefaultNavBar: false) {
         rootView
     }
-    RootWindow.reset(to: navView)
+    onMainThread {
+        RootWindow.reset(to: navView)
+    }
 }
 
