@@ -11,7 +11,6 @@ import Core
 import Presentation
 import SwiftUI
 
-@available(iOS 13.0, *)
 class SceneDelegate: CoreSceneDelegate, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -60,7 +59,7 @@ class SceneDelegate: CoreSceneDelegate, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
 
         // Save changes in the application's managed object context when the application transitions to the background.
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+//        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
 
