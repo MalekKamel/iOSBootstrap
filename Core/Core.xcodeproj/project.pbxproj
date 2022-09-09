@@ -25,6 +25,7 @@
 		58B83BB851426E7469C5FD25 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58B8369EA19578D35DC4D892 /* Roboto-Medium.ttf */; };
 		58B83D21CEB679E6D80CCB2C /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58B8344BA440A9DF9916BE33 /* Roboto-Bold.ttf */; };
 		58B83D70C5A21C9F4EC494AD /* Error+Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8354718FB2E0E47843E06 /* Error+Log.swift */; };
+		58B83F89604675BE5043DE3D /* OnMainThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B834AD6E11F4DB4338E97D /* OnMainThread.swift */; };
 		6D6C787F68DBC9E9DB09E0CF /* BuildConfigName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C79CE2367935C81299447 /* BuildConfigName.swift */; };
 		F2772F7126FDAC3E0047D753 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2772F7026FDAC3E0047D753 /* Fonts.swift */; };
 		F27C3D4926DFD48F00B44D27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F27C3D4726DFD48F00B44D27 /* Localizable.strings */; };
@@ -78,6 +79,7 @@
 		1BCACFE842E5A5932FB08947 /* CoreBundleToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreBundleToken.swift; sourceTree = "<group>"; };
 		58B831CE90A26647B368C52E /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		58B8344BA440A9DF9916BE33 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		58B834AD6E11F4DB4338E97D /* OnMainThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnMainThread.swift; sourceTree = "<group>"; };
 		58B8354718FB2E0E47843E06 /* Error+Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+Log.swift"; sourceTree = "<group>"; };
 		58B836855BAE8D90E3EAB5CD /* BuildConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildConfig.swift; sourceTree = "<group>"; };
 		58B8369EA19578D35DC4D892 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				1BCAC42B96AC7F15AF2D8A29 /* SwiftUI */,
 				1BCACFE842E5A5932FB08947 /* CoreBundleToken.swift */,
 				1BCACAFFEC054543253808A7 /* CoreSceneDelegate.swift */,
+				58B83E7EC449A52E81C669AA /* Thread */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -198,6 +201,14 @@
 				1BCAC6B2507C410649CA92EA /* FontFamily+SwiftUIFont.swift */,
 			);
 			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		58B83E7EC449A52E81C669AA /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				58B834AD6E11F4DB4338E97D /* OnMainThread.swift */,
+			);
+			path = Thread;
 			sourceTree = "<group>";
 		};
 		6D6C7ADBB23D65F74CF80666 /* Resources */ = {
@@ -422,6 +433,7 @@
 				1BCAC1DC45838FE7D1D09A12 /* AppHostingController.swift in Sources */,
 				58B83D70C5A21C9F4EC494AD /* Error+Log.swift in Sources */,
 				58B8327C3339ABCBCCA2B10A /* BuildConfig.swift in Sources */,
+				58B83F89604675BE5043DE3D /* OnMainThread.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
