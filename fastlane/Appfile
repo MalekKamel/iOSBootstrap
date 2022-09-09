@@ -8,6 +8,6 @@ itc_team_id "TODO"
 #     https://docs.fastlane.tools/advanced/#appfile
 
 ENV["FASTLANE_USER"]= "TODO"
-ENV["PRODUCE_APP_IDINTIFIER"] = "com.starter.app"
+ENV["PRODUCE_APP_IDINTIFIER"] = "com.bootstrap.app"
 ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "TODO"
 ENV["FIREBASE_TOKEN"] = "TODO"
