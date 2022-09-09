@@ -7,7 +7,6 @@ import Foundation
 
 class ProductsVM: AppViewModel {
     public var dataManager: DataManagerContract
-    @Published public var loadState: LoadingState = .init()
     public var requester: AsyncMan
 
     public init(dataManager: DataManagerContract, requester: AsyncMan) {

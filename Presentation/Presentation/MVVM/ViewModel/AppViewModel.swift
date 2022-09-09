@@ -9,7 +9,6 @@ import Combine
 
 public protocol AppViewModel: ObservableObject, AsyncManDelegate {
     var requester: AsyncMan { get }
-    var loadState: LoadingState { get set }
     var dataManager: DataManagerContract { get set }
 
     func request(
@@ -25,12 +24,17 @@ public protocol AppViewModel: ObservableObject, AsyncManDelegate {
 public extension AppViewModel {
 
     func showLoading() {
-        loadState.loading = .loading
+        onMainThread {
+            AppLoadingIndicator.show()
+        }
     }
 
     func hideLoading() {
-        loadState.loading = .idle
+        onMainThread {
+            AppLoadingIndicator.hide()
+        }
     }
+
 
     func show(error: String) {
         Reporter.shared.show(error: error)
